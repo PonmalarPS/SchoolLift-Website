@@ -13,6 +13,8 @@ import HomeLearning from "./pages/HomeLearning";
 import StudentInformationSystem from "./pages/StudentInformationSystem";
 import TransportManagement from "./pages/TransportManagement";
 import FeesManagement from "./pages/FeesManagement";
+import ReportCardManagement from "./pages/ReportCardManagement";
+import ParentCommunicationPortal from "./pages/ParentCommunicationPortal";
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
           <Route path="/studentInformationSystem" element={<StudentInformationSystem />} />
           <Route path="/transport" element={<TransportManagement />} />
           <Route path="/feeManagement" element={<FeesManagement />} />
+          <Route path="/reportCardManagement" element={<ReportCardManagement />} />
+          <Route path="/parentCommunicationPortal" element={<ParentCommunicationPortal />} />
           <Route path="/notFound" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

@@ -488,7 +488,7 @@ function ExceptionalFeaturesSection() {
 }
 
 const FrequentlyAskedQuestions = () => {
-    const [openId, setOpenId] = useState(1);
+    const [openId, setOpenId] = useState(null);
     const faqItems = [
         {
             id: 1,
@@ -547,12 +547,13 @@ The Transport dashboard is available on Android App and as a web interface which
                 </div>
 
                 <div className="relative mt-10">
-                    <div className="max-w-[1180px] relative z-10">
-                        {faqItems.map((item) => (
+                    <div className="relative z-10 w-full">
+                        {faqItems.map((item, index) => (
                             <FaqRow
                                 key={item.id}
                                 item={item}
                                 isOpen={openId === item.id}
+                                isLast={index === faqItems.length - 1}
                                 onToggle={() =>
                                     setOpenId((prev) => (prev === item.id ? null : item.id))
                                 }
@@ -574,9 +575,9 @@ The Transport dashboard is available on Android App and as a web interface which
     );
 }
 
-function FaqRow({ item, isOpen, onToggle }) {
+function FaqRow({ item, isOpen, onToggle, isLast }) {
     return (
-        <div className="border-b border-[#e7e7e7]">
+        <div className={`${!isLast ? "border-b border-[#e7e7e7]" : ""}`}>
             <button
                 onClick={onToggle}
                 className="flex w-full items-center justify-between gap-6 py-[22px] text-left"
@@ -599,7 +600,7 @@ function FaqRow({ item, isOpen, onToggle }) {
                     }`}
             >
                 <div className="overflow-hidden">
-                    <p className="max-w-[1120px] pb-[10px] pr-12 text-[16px] leading-[1.9] font-extralight text-[#666666] whitespace-pre-line">
+                    <p className="pb-[10px] text-[16px] leading-[1.9] font-extralight text-[#666666] whitespace-pre-line">
                         {item.answer}
                     </p>
                 </div>
