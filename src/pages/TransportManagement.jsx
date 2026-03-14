@@ -76,7 +76,7 @@ const SchoolBusManagementSection = () => {
                 </p>
 
                 <p className="mx-auto mt-8 max-w-[1100px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
-                    With detailed reports and analysis, you can reduce operational costs, ensure timely maintenance, and take control of student safety. Parents can monitor the real-time location and time of arrival using the SkoolBeep's school bus tracker
+                    With detailed reports and analysis, you can reduce operational costs, ensure timely maintenance, and take control of student safety. Parents can monitor the real-time location and time of arrival using the School Lift's school bus tracker
                 </p>
             </div>
         </section>
@@ -186,7 +186,7 @@ function SchoolBusTrackingSystem() {
                 {/* heading */}
                 <div className="text-center">
                     <h2 className="mt-5 font-heading text-[32px] font-semibold leading-[1.15] text-[#a631ae] sm:text-[30px]">
-                        SkoolBeep School Bus Tracking System
+                        School Lift School Bus Tracking System
                     </h2>
                     <div className="mx-auto mt-2 h-[3px] w-[28px] bg-[#b63dbd]" />
                 </div>
@@ -372,7 +372,7 @@ function EffortlessSchoolBusManagementSection() {
                         <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-sbBlue" />
                     </div>
                     <p className="mx-auto mt-5 text-sbTextLight text-[18px] font-extralight leading-[1.75]">
-                        SkoolBeep’s transport management solution simplifies fleet operations, giving you total control and visibility over student safety and bus efficiency.
+                        School Lift’s transport management solution simplifies fleet operations, giving you total control and visibility over student safety and bus efficiency.
                     </p>
                 </div>
 
@@ -452,7 +452,7 @@ function ExceptionalFeaturesSection() {
                 {/* Heading */}
                 <div className="text-center">
                     <h2 className="text-[32px] font-semibold text-white leading-[40px]">
-                        Exceptional Features from SkoolBeep
+                        Exceptional Features from School Lift
                     </h2>
                     <div className="mx-auto mt-4 h-[3px] w-[60px] bg-white" />
                 </div>
@@ -501,7 +501,7 @@ Parents can set their pick and drop points. Parents can live track the assigned 
         },
         {
             id: 2,
-            question: "How does SkoolBeep’s bus tracking system work?",
+            question: "How does School Lift’s bus tracking system work?",
             answer: `Works with tracking unit ( Option1 : AIS 140 compliant hardware unit OR a mobile device)
 
 Tracking unit periodically uploads the bus location data to a central server which is provided to parents for live location tracking. Any particular events of interest (like over-speeding, sudden braking etc) are also reported to the central server.`,

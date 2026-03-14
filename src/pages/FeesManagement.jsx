@@ -44,7 +44,7 @@ const testimonials = [
         role: "Principal, Sri Akilandeswari Vidyalaya",
         location: "Tiruchirappalli, Tamil Nadu",
         image: img1,
-        text: `The academic team at our school have evaluated the learning solution from SkoolBeep. It has chapter-wise videos, presentations, practice questions and mock exams. It is completely aligned to the syllabus.`,
+        text: `The academic team at our school have evaluated the learning solution from School Lift. It has chapter-wise videos, presentations, practice questions and mock exams. It is completely aligned to the syllabus.`,
     },
     {
         id: 2,
@@ -52,7 +52,7 @@ const testimonials = [
         role: "Principal Marygiri English Medium School",
         location: "Trivandrum, Kerala",
         image: img2,
-        text: `SkoolBeep provided us a simple solution to a complex problem. They simplified the fee collection process. It is very easy to use and well appreciated by parents and finance team. I appreciate the SkoolBeep team for their relentless support, which is efficient and quick`,
+        text: `School Lift provided us a simple solution to a complex problem. They simplified the fee collection process. It is very easy to use and well appreciated by parents and finance team. I appreciate the School Lift team for their relentless support, which is efficient and quick`,
     }
 ];
 
@@ -141,7 +141,7 @@ function TakeChargeSection() {
         {
             title: "Enable quick payment through loan and payment options",
             description:
-                "Online Payment support for over 50+ banks & UPI apps integrated within SkoolBeep app. Loan Options also available.",
+                "Online Payment support for over 50+ banks & UPI apps integrated within School Lift app. Loan Options also available.",
             image: Fee_Payments_Screen3,
         },
         {
@@ -302,7 +302,7 @@ function HassleFreeFeeManagementSection() {
                         <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-sbBlue" />
                     </div>
                     <p className="mx-auto mt-5 text-sbTextLight text-[18px] font-extralight leading-[1.75]">
-                        SkoolBeep’s fee management provides a comprehensive solution for schools to simplify and speed up the fee collection process. An efficient mechanism for fee scheduling, timely reminders, payment collection, automated receipt generation, and bank reconciliation that lets you stay on top of the financial health of your institution.
+                        School Lift’s fee management provides a comprehensive solution for schools to simplify and speed up the fee collection process. An efficient mechanism for fee scheduling, timely reminders, payment collection, automated receipt generation, and bank reconciliation that lets you stay on top of the financial health of your institution.
                     </p>
                 </div>
 
@@ -342,12 +342,12 @@ function WhyChooseUsSection() {
         {
             title: "Trusted by 1500+ schools",
             description:
-                "SkoolBeep is absolutely secure and trusted by 1000+ schools across 15 states across India.",
+                "School Lift is absolutely secure and trusted by 1000+ schools across 15 states across India.",
         },
         {
             title: "50+ Options to Pay",
             description:
-                "Online Payment support for over 50+ banks & UPI apps integrated within SkoolBeep app. Loan Options also available.",
+                "Online Payment support for over 50+ banks & UPI apps integrated within School Lift app. Loan Options also available.",
         },
         {
             title: "Easy Customization",
@@ -372,7 +372,7 @@ function WhyChooseUsSection() {
                     <div className="relative flex flex-col items-center lg:items-start">
                         <div className="w-full text-center lg:pl-24 lg:text-left xl:pl-28 flex flex-col items-center lg:items-start">
                             <p className="text-[20px] font-extralight uppercase tracking-[0.3px] text-white/90">
-                                THE SKOOLBEEP ADVANTAGE
+                                THE SCHOOL LIFT ADVANTAGE
                             </p>
 
                             <h2 className="mt-2 text-[30px] font-medium leading-[1.15] text-white">
@@ -441,7 +441,7 @@ const SupportedPayments = () => {
                         <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-sbBlue" />
                     </div>
                     <p className="mx-auto mt-5 text-sbTextLight text-[17px] font-extralight leading-[1.75]">
-                        SkoolBeep is available on all Android and iOS devices. We support all the leading banks in India, which will ensure that all your payment requirements are covered. In addition to net banking, we support UPI interface and integration with digital payment interfaces like Google Pay, PhonePe, PayTM etc.
+                        School Lift is available on all Android and iOS devices. We support all the leading banks in India, which will ensure that all your payment requirements are covered. In addition to net banking, we support UPI interface and integration with digital payment interfaces like Google Pay, PhonePe, PayTM etc.
                     </p>
                 </div>
             </div>
@@ -456,7 +456,7 @@ function FeeManagementProcessSection() {
             icon: report,
             title: "Share fee details",
             description:
-                "School shares fee details for an academic year with SkoolBeep. Our team will set up the fee management module.",
+                "School shares fee details for an academic year with School Lift. Our team will set up the fee management module.",
         },
         {
             icon: alerts,
@@ -501,7 +501,7 @@ function FeeManagementProcessSection() {
                 {/* heading */}
                 <div className="text-center">
                     <h2 className="text-[32px] font-semibold text-white leading-[40px]">
-                        Fee Management - The SkoolBeep Process
+                        Fee Management - The School Lift Process
                     </h2>
                     <div className="mx-auto mt-5 h-[3px] w-[72px] rounded-full bg-white" />
                 </div>
@@ -612,8 +612,8 @@ const FrequentlyAskedQuestions = () => {
     const faqItems = [
         {
             id: 1,
-            question: "What is the advantage of using SkoolBeep’s fee management software?",
-            answer: `SkoolBeep’s fee management software significantly enhances your school's efficiency by automating and streamlining financial processes. Here are the key features that will transform the way you collect and manage fees.
+            question: "What is the advantage of using School Lift’s fee management software?",
+            answer: `School Lift’s fee management software significantly enhances your school's efficiency by automating and streamlining financial processes. Here are the key features that will transform the way you collect and manage fees.
 
 Simplifies fee collection: Online school fee payment system for Parents. Reduces manual effort for staff. Reminders and notifications will ensure timely transactions.
 
@@ -635,7 +635,7 @@ Overall, the Online school fee payment system saves time, reduces costs, and pro
         {
             id: 3,
             question: "Can I manage cheque/DD payments?",
-            answer: `YES. SkoolBeep supports all payment mechanisms from Cash, Bank Challans, Direct Online transfer to school bank account, DD, Cheques, Wallets etc.. Parents can choose and pay though any payment mechanism thats convenient for them, SkoolBeep fee payment system supports ALL mechanisms.
+            answer: `YES. School Lift supports all payment mechanisms from Cash, Bank Challans, Direct Online transfer to school bank account, DD, Cheques, Wallets etc.. Parents can choose and pay though any payment mechanism thats convenient for them, School Lift fee payment system supports ALL mechanisms.
 
 Online payment is an additional convenience that enables 24*7 availablity, instant receipts, easy reconciliation for school management & a convenient method that saves time and effort for parents.`,
         },
@@ -646,7 +646,7 @@ Online payment is an additional convenience that enables 24*7 availablity, insta
         },
         {
             id: 5,
-            question: "How can I implement SkoolBeep’s fee management solution?",
+            question: "How can I implement School Lift’s fee management solution?",
             answer: `Please get in touch with us through the contact form in this page OR email/support numbers in this page.. We will schedule a time to talk to your school administration staff and set up the system for you in 10-15 days.`,
         }
     ];

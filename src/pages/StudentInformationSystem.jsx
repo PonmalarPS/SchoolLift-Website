@@ -35,7 +35,7 @@ const testimonials = [
         role: "Principal, Sri Akilandeswari Vidyalaya",
         location: "Tiruchirappalli, Tamil Nadu",
         image: parentsIcon,
-        text: `The academic team at our school have evaluated the learning solution from SkoolBeep. It has chapter-wise videos, presentations, practice questions and mock exams. It is completely aligned to the syllabus.`,
+        text: `The academic team at our school have evaluated the learning solution from School Lift. It has chapter-wise videos, presentations, practice questions and mock exams. It is completely aligned to the syllabus.`,
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ const testimonials = [
         role: "Principal, RN Matric HR Sec School, Madurai",
         location: "",
         image: parentsIcon,
-        text: `We have evaluated many apps for our school. The SkoolBeep digital learning provides unique opportunities for teachers to help students with learning even outside the classroom. The quizzes, learning material is aligned to the syllabus and the personalised feedback will helps students of all levels achieve greater proficiency in their subjects..`,
+        text: `We have evaluated many apps for our school. The School Lift digital learning provides unique opportunities for teachers to help students with learning even outside the classroom. The quizzes, learning material is aligned to the syllabus and the personalised feedback will helps students of all levels achieve greater proficiency in their subjects..`,
     },
     {
         id: 3,
@@ -51,7 +51,7 @@ const testimonials = [
         role: "Principal, Bishop Heber Hr. Sec. School",
         location: "Teppakulam",
         image: parentsIcon,
-        text: `SkoolBeep StudyBuddy has videos, quizzes, games, presentations, etc. The syllabus-aligned learning resources will help teachers to not only excite interest in students in the class but also send assignments, notes and review their practice sessions. Very essential in this modern age to keep students excited and involved.`,
+        text: `School Lift StudyBuddy has videos, quizzes, games, presentations, etc. The syllabus-aligned learning resources will help teachers to not only excite interest in students in the class but also send assignments, notes and review their practice sessions. Very essential in this modern age to keep students excited and involved.`,
     },
 ];
 
@@ -340,7 +340,7 @@ function FoundationOfSchoolSection() {
                         <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-[#4456d9]" />
                     </div>
                     <p className="mx-auto mt-5 text-sbTextLight text-[18px] font-extralight leading-[1.75]">
-                        SkoolBeep’s Student Information System (SIS) is the foundation for the digitization of your school. Our comprehensive solution acts as a central hub to store, manage and access student data effortlessly.
+                        School Lift’s Student Information System (SIS) is the foundation for the digitization of your school. Our comprehensive solution acts as a central hub to store, manage and access student data effortlessly.
                     </p>
                 </div>
 
@@ -382,7 +382,7 @@ function StudentInformationSection() {
         {
             title: "Choose templates from repository",
             description:
-                "SkoolBeep has several pre-defined templates with different fields to capture student data.",
+                "School Lift has several pre-defined templates with different fields to capture student data.",
             image: sISTemplatesScreen1
         },
         {
@@ -416,13 +416,13 @@ function StudentInformationSection() {
                 <div className="mx-auto max-w-[1000px] text-center">
 
                     <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
-                        Student Information Sorted The SkoolBeep Way
+                        Student Information Sorted The School Lift Way
                     </h2>
 
                     <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-[#4456d9]" />
 
                     <p className="mx-auto mt-5 text-sbTextLight text-[18px] font-extralight leading-[1.75]">
-                        With SkoolBeep's Student Information System (SIS), you can easily access and review crucial information about a student's academic progress and performance. From attendance records to grades, disciplinary actions, and even medical history, the SIS provides a centralized and secure location for storing and managing all essential student data.
+                        With School Lift's Student Information System (SIS), you can easily access and review crucial information about a student's academic progress and performance. From attendance records to grades, disciplinary actions, and even medical history, the SIS provides a centralized and secure location for storing and managing all essential student data.
                     </p>
                 </div>
 
@@ -584,7 +584,7 @@ Please go through our data handling policy document our methodology and safety s
         },
         {
             id: 5,
-            question: "How is SkoolBeep’s student information system protected?",
+            question: "How is School Lift’s student information system protected?",
             answer: `Our solution is hosted on Microsoft Azure which is trusted by enterprises, governments and startups worldwide.
 
 Our internal practices ensure that data access is restricted and bound by stringent regulations.`,

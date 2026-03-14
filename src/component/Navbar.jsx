@@ -11,13 +11,15 @@ const schoolManagementItems = [
     "Transport Management",
     "Parent Communication Portal",
     "Report Card Management",
+    "Kinder Suite",
+    "K-12 Suite"
 ];
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <header className="relative z-50 w-full bg-white border-b border-gray-100">
+        <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-100">
             <div className="mx-auto flex max-w-[1400px] items-center justify-between px-10 py-4">
                 {/* Logo */}
                 <div className="flex items-center">
@@ -93,6 +95,8 @@ const Navbar = () => {
                                                             "/transport",
                                                             "/parentCommunicationPortal",
                                                             "/reportCardManagement",
+                                                            "/kinderSuite",
+                                                            "/k12Suite",
                                                         ];
 
                                                         return (

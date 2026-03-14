@@ -21,7 +21,7 @@ const Footer = () => {
                 {/* COLUMN 1 */}
                 <div>
                     <img
-                        src={appLogo}  // your SkoolBeep logo
+                        src={appLogo}  // your School Lift logo
                         alt="App Logo"
                         className="w-[190px] mb-6"
                     />
@@ -57,9 +57,9 @@ const Footer = () => {
 
                     <ul className="space-y-3 text-[16px] font-extralight text-sbTextLight mb-10">
                         <li>080 4568 0808</li>
-                        <li>support@skoolbeep.com</li>
+                        <li>support@schoollift.com</li>
                         <li>080 4568 0086</li>
-                        <li>sales@skoolbeep.com</li>
+                        <li>sales@schoollift.com</li>
                     </ul>
 
                     <p className="text-[17px] font-semibold mb-4">
@@ -68,7 +68,7 @@ const Footer = () => {
 
                     <ul className="space-y-3 text-[16px] text-sbTextLight font-extralight">
                         <li>080 4568 0360</li>
-                        <li>partnerships@skoolbeep.com</li>
+                        <li>partnerships@schoollift.com</li>
                     </ul>
                 </div>
 

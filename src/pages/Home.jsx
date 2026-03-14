@@ -110,7 +110,7 @@ const testimonials = [
         role: "Principal, Sri Akilandeswari Vidyalaya",
         location: "Tiruchirappalli, Tamil Nadu",
         image: parentsIcon,
-        text: `The academic team at our school have evaluated the learning solution from SkoolBeep. It has chapter-wise videos, presentations, practice questions and mock exams. It is completely aligned to the syllabus.`,
+        text: `The academic team at our school have evaluated the learning solution from School Lift. It has chapter-wise videos, presentations, practice questions and mock exams. It is completely aligned to the syllabus.`,
     },
     {
         id: 2,
@@ -118,7 +118,7 @@ const testimonials = [
         role: "Principal, RN Matric HR Sec School, Madurai",
         location: "",
         image: parentsIcon,
-        text: `We have evaluated many apps for our school. The SkoolBeep digital learning provides unique opportunities for teachers to help students with learning even outside the classroom. The quizzes, learning material is aligned to the syllabus and the personalised feedback will helps students of all levels achieve greater proficiency in their subjects..`,
+        text: `We have evaluated many apps for our school. The School Lift digital learning provides unique opportunities for teachers to help students with learning even outside the classroom. The quizzes, learning material is aligned to the syllabus and the personalised feedback will helps students of all levels achieve greater proficiency in their subjects..`,
     },
     {
         id: 3,
@@ -126,7 +126,7 @@ const testimonials = [
         role: "Principal, Bishop Heber Hr. Sec. School",
         location: "Teppakulam",
         image: parentsIcon,
-        text: `SkoolBeep StudyBuddy has videos, quizzes, games, presentations, etc. The syllabus-aligned learning resources will help teachers to not only excite interest in students in the class but also send assignments, notes and review their practice sessions. Very essential in this modern age to keep students excited and involved.`,
+        text: `School Lift StudyBuddy has videos, quizzes, games, presentations, etc. The syllabus-aligned learning resources will help teachers to not only excite interest in students in the class but also send assignments, notes and review their practice sessions. Very essential in this modern age to keep students excited and involved.`,
     },
 ];
 
@@ -144,7 +144,7 @@ const Home = () => {
             <HomeLearningSection />
             <KnowMoreBtn />
             <SchoolAdministrationSection />
-            <SkoolBeepDifference />
+            <SchoolLiftDifference />
             <WhatTheySay />
             <OurClients />
         </div>
@@ -285,7 +285,7 @@ const TechnologySection = () => {
                 {/* Description */}
                 <p className="mt-5 text-[18px] font-extralight text-sbTextLight leading-[35px]">
                     Technology can greatly transform the way you teach, manage and operate a school.
-                    SkoolBeep's technology solutions allow you to focus on delivering exceptional
+                    School Lift's technology solutions allow you to focus on delivering exceptional
                     learning outcomes by empowering teachers, engaging young minds, streamlining
                     administration and involving all stakeholders.
                 </p>
@@ -732,7 +732,7 @@ const HomeLearningSection = () => {
 
                     {/* Subtext */}
                     <p className="text-[18px] leading-[28px] font-extralight text-sbTextLight mb-[50px] max-w-[520px]">
-                        The SkoolBeep app brings everything a student needs to augment classroom learning at home.
+                        The School Lift app brings everything a student needs to augment classroom learning at home.
                     </p>
 
                     {/* FEATURES */}
@@ -828,7 +828,7 @@ const SchoolAdministrationSection = () => {
 
                 {/* Heading */}
                 <h2 className="text-[32px] font-semibold mb-4 text-white">
-                    School Administration, the SkoolBeep Way
+                    School Administration, the School Lift Way
                 </h2>
 
                 {/* Divider */}
@@ -896,7 +896,7 @@ const FeatureCard = ({ icon, title }) => {
 };
 
 
-const SkoolBeepDifference = () => {
+const SchoolLiftDifference = () => {
     return (
         <section className="bg-sbWhite py-[50px]">
             <div className="max-w-[1280px] mx-auto px-6 text-center">

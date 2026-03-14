@@ -92,11 +92,11 @@ const ReportCardManagementSection = () => {
                 </p>
 
                 <p className="mx-auto mt-4 max-w-[1100px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
-                    Reduce the amount of time spent on manual entry of marks, report card formatting, and grade calculation with SkoolBeep. Our platform not only allows for mobile entry of grades by teachers but also automates grade calculations and provides customized report cards that will impress parents.
+                    Reduce the amount of time spent on manual entry of marks, report card formatting, and grade calculation with School Lift. Our platform not only allows for mobile entry of grades by teachers but also automates grade calculations and provides customized report cards that will impress parents.
                 </p>
 
                 <p className="mx-auto mt-8 max-w-[1100px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
-                    Access to report cards is quick and easy for parents with a simple login on the SkoolBeep app. The academic team can also gain in-depth insights into school, class, and student performance. SkoolBeep also provides compliance with board and NEP requirements, making it a hassle-free solution for all your evaluation and report card management needs.
+                    Access to report cards is quick and easy for parents with a simple login on the School Lift app. The academic team can also gain in-depth insights into school, class, and student performance. School Lift also provides compliance with board and NEP requirements, making it a hassle-free solution for all your evaluation and report card management needs.
                 </p>
             </div>
         </section>
@@ -242,7 +242,7 @@ const RevolutionizeStudentEvaluationSection = () => {
         {
             id: 2,
             title: "Easy marks entry",
-            description: "Teachers can enter marks easily using the SkoolBeep app.",
+            description: "Teachers can enter marks easily using the School Lift app.",
             icon: easy,
         },
         {
@@ -318,7 +318,7 @@ const RevolutionizeStudentEvaluationSection = () => {
                         <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-sbBlue" />
                     </div>
                     <p className="mx-auto mt-5 text-sbTextLight text-[18px] font-extralight leading-[1.75]">
-                        SkoolBeep’s student report card software not only simplifies and automates the process of evaluation. It helps provide timely and helpful insights on performance, keeps parents involved and enables holistic evaluation. Schools can focus on improving student success with reliable insights.                    </p>
+                        School Lift’s student report card software not only simplifies and automates the process of evaluation. It helps provide timely and helpful insights on performance, keeps parents involved and enables holistic evaluation. Schools can focus on improving student success with reliable insights.                    </p>
                 </div>
 
                 {/* Feature grid */}
@@ -358,7 +358,7 @@ const FrequentlyAskedQuestions = () => {
         {
             id: 1,
             question: "What is a student result management system?",
-            answer: `SkoolBeep’s student result management system has essentially two parts:
+            answer: `School Lift’s student result management system has essentially two parts:
 
 Student Report: Record of all evaluation for a particular student
 School Summary: Detailed reports on student, class, subject, school performance for administrators.`,
@@ -371,7 +371,7 @@ The steps involved:
 
 1.Choose from our repository of CBSE/Education Board compliant report card templates
 2.Setup of Grading/Marking levels
-3.Entry by Teachers using SkoolBeep app
+3.Entry by Teachers using School Lift app
 4.Publish reports online or export and print report cards
 5.School Analysis/Parent review of progress`,
         },
@@ -388,7 +388,7 @@ The steps involved:
         },
         {
             id: 4,
-            question: "What is special about the Skoolbeep’s student report card software?",
+            question: "What is special about the School Lift's student report card software?",
             answer: `The interface is intuitive and easy to use
 1.Easy to collate marks
 2.Auto grade calculations
@@ -403,7 +403,7 @@ The steps involved:
         {
             id: 6,
             question: "Can the report cards be shared to parents online?",
-            answer: `Yes. Available as pdf in the SkoolBeep app. This can be downloaded as well.`,
+            answer: `Yes. Available as pdf in the School Lift app. This can be downloaded as well.`,
         },
         {
             id: 7,

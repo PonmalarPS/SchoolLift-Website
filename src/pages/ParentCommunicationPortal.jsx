@@ -58,7 +58,7 @@ const ParentCommunicationPortal = () => {
             <EverythingSchoolInOneApp />
             <BetterInvolvementSection />
             <GetEveryoneOnTheSamePageSection />
-            <StudentInformationSortedTheSkoolBeepWay />
+            <StudentInformationSortedTheSchoolLiftWay />
             <FrequentlyAskedQuestions />
         </div>
     );
@@ -96,7 +96,7 @@ const ParentCommunicationPortalSection = () => {
                 </p>
 
                 <p className="mx-auto mt-8 max-w-[1100px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
-                    SkoolBeep’s school app for parents makes it easier for parents to stay involved in their child's education and ensures they have all the information they need to make informed decisions in one location.
+                    School Lift’s school app for parents makes it easier for parents to stay involved in their child's education and ensures they have all the information they need to make informed decisions in one location.
                 </p>
             </div>
         </section>
@@ -221,7 +221,7 @@ function EverythingSchoolInOneApp() {
                             <p className="mt-8 max-w-[620px] text-[17px] font-extralight leading-[1.8] text-white/90">
                                 No more tracking communication across websites, student paper
                                 diaries, SMS, paper circulars, Facebook pages, and bus-tracking
-                                apps! With the SkoolBeep app, all school-related communication and
+                                apps! With the School Lift app, all school-related communication and
                                 student information is centralized. All the information you need,
                                 any time you need at your fingertips.
                             </p>
@@ -294,7 +294,7 @@ const BetterInvolvementSection = () => {
         {
             id: 5,
             title: "Pay Fees at your convenient time",
-            description: "No more waiting in queues during office hours. Pay fees online at your convenience using the SkoolBeep app. Loan options available.",
+            description: "No more waiting in queues during office hours. Pay fees online at your convenience using the School Lift app. Loan options available.",
             icon: img5,
         },
         {
@@ -351,7 +351,7 @@ const BetterInvolvementSection = () => {
                         <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-sbBlue" />
                     </div>
                     <p className="mx-auto mt-5 text-sbTextLight text-[18px] font-extralight leading-[1.75]">
-                        SkoolBeep’s parent communication module makes it easier for parents to stay involved in their child's education and ensures they have all the information they need to make informed decisions.
+                        School Lift’s parent communication module makes it easier for parents to stay involved in their child's education and ensures they have all the information they need to make informed decisions.
                     </p>
                 </div>
 
@@ -504,7 +504,7 @@ function GetEveryoneOnTheSamePageSection() {
     );
 }
 
-const StudentInformationSortedTheSkoolBeepWay = () => {
+const StudentInformationSortedTheSchoolLiftWay = () => {
     const comparisonRows = [
         {
             feature: "Privacy",
@@ -566,14 +566,14 @@ No hassle to manage and track communication with multiple seperate groups`
                 {/* heading */}
                 <div className="mb-8 flex flex-col items-center">
                     <h2 className="text-[32px] font-semibold text-sbPurple leading-[40px]">
-                        Student Information sorted the SkoolBeep Way
+                        Student Information sorted the School Lift Way
                     </h2>
                     <div className="mt-4 h-[4px] w-[52px] rounded-full bg-sbPurple" />
                     <p className="mx-auto mt-5 text-center text-sbTextLight text-[18px] font-extralight leading-[1.75]">
                         Schools need a centralized and secure channel of communication to build relationships, communicate effectively, and increase engagement without compromising privacy. While WhatsApp may be a popular communication tool among friends and family, it is not designed for educational purposes.
                     </p>
                     <p className="mx-auto mt-5 text-center text-sbTextLight text-[18px] font-extralight leading-[1.75]">
-                        Here is why investing in a trusted education communication platform like SkoolBeep is the best choice for schools:
+                        Here is why investing in a trusted education communication platform like School Lift is the best choice for schools:
                     </p>
                 </div>
 
@@ -588,7 +588,7 @@ No hassle to manage and track communication with multiple seperate groups`
                             WHATSAPP
                         </div>
                         <div className="bg-sbPurple px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-white">
-                            SKOOLBEEP PARENT PORTAL
+                            SCHOOL LIFT PARENT PORTAL
                         </div>
                     </div>
 
@@ -657,7 +657,7 @@ const FrequentlyAskedQuestions = () => {
     const faqItems = [
         {
             id: 1,
-            question: "What is the advantage of using SkoolBeep’s school app for parents?",
+            question: "What is the advantage of using School Lift’s school app for parents?",
             answer: `The school app for parents centralizes access to different communication threads related to a student in a single location. Apart from centralization of communication, it also:
 1.consolidated all information for parents
 2.streamlines school operations and digitization
@@ -679,13 +679,13 @@ const FrequentlyAskedQuestions = () => {
         },
         {
             id: 4,
-            question: "How does SkoolBeep's school app for parents benefit teachers?",
+            question: "How does School Lift's school app for parents benefit teachers?",
             answer: "It empowers teachers with an interface to communicate with parents regarding classroom performance and activities. This ensures that all communication is tracked and helps ensure work-life balance for teachers as they don't have to continuously monitor Whatsapp chats or messages"
         },
         {
             id: 5,
-            question: "What kind of support will SkoolBeep provide for the set up?",
-            answer: `The SkoolBeep support team will set up the school parent/student enrolment system. The team will also set up the parent portal to facilitate parent access, school operations management and enable role-based staff access.`
+            question: "What kind of support will School Lift provide for the set up?",
+            answer: `The School Lift support team will set up the school parent/student enrolment system. The team will also set up the parent portal to facilitate parent access, school operations management and enable role-based staff access.`
         }
     ];
     return (

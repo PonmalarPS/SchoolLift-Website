@@ -15,6 +15,8 @@ import TransportManagement from "./pages/TransportManagement";
 import FeesManagement from "./pages/FeesManagement";
 import ReportCardManagement from "./pages/ReportCardManagement";
 import ParentCommunicationPortal from "./pages/ParentCommunicationPortal";
+import KinderSuite from "./pages/KinderSuite";
+import K12Suite from "./pages/K12Suite";
 
 const App = () => {
   return (
@@ -33,6 +35,8 @@ const App = () => {
           <Route path="/feeManagement" element={<FeesManagement />} />
           <Route path="/reportCardManagement" element={<ReportCardManagement />} />
           <Route path="/parentCommunicationPortal" element={<ParentCommunicationPortal />} />
+          <Route path="/kinderSuite" element={<KinderSuite />} />
+          <Route path="/k12Suite" element={<K12Suite />} />
           <Route path="/notFound" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

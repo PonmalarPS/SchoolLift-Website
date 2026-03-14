@@ -78,7 +78,7 @@ const ContactSection = () => {
                             </h3>
 
                             <p className="text-lg leading-8 text-sbTextLight font-light max-w-xl mx-auto">
-                                Want to know more about how SkoolBeep's solution can help your
+                                Want to know more about how School Lift's solution can help your
                                 unique needs? Just pick up the phone to connect with a member of
                                 our sales team.
                             </p>
@@ -119,7 +119,7 @@ const ContactSection = () => {
                             </h3>
 
                             <p className="text-lg leading-8 text-sbTextLight font-light max-w-xl mx-auto">
-                                Need help with SkoolBeep? Contact our Customer Support team for
+                                Need help with School Lift? Contact our Customer Support team for
                                 a quick solution.
                             </p>
                         </div>
@@ -294,7 +294,7 @@ const LocationSection = () => {
                         <img src={locationLogo} alt="location" className="w-5 h-5" />
                     </div>
                     <div>
-                        <p className="font-medium text-sbText text-[18px]">SkoolBeep</p>
+                        <p className="font-medium text-sbText text-[18px]">School Lift</p>
                         <p className="text-sbTextLight font-light pt-3 text-[17px]">
                             Tangsys Technologies Pvt Ltd<br />
                             1585, 4th Floor, 20th Main Rd, Agara Village,<br />
@@ -318,7 +318,7 @@ const LocationSection = () => {
                         <img src={mailLogo} alt="mail" className="w-5 h-5" />
                     </div>
                     <a href="#" className="text-sbBlue underline font-light text-[17px]">
-                        info@skoolbeep.com
+                        info@schoollift.com
                     </a>
                 </div>
 
@@ -440,13 +440,13 @@ const GetInTouch = () => {
                             {/* Sales Row */}
                             <span className="text-sbTextLight font-light text-lg">Sales</span>
                             <span className="text-sbBlue font-medium break-all text-lg">
-                                sales@skoolbeep.com
+                                sales@schoollift.com
                             </span>
 
                             {/* Support Row */}
                             <span className="text-sbTextLight font-light text-lg">Support</span>
                             <span className="text-sbBlue font-medium break-all text-lg">
-                                support@skoolbeep.com
+                                support@schoollift.com
                             </span>
                         </div>
                     </div>

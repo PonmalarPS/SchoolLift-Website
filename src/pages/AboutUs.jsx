@@ -90,7 +90,7 @@ const AboutSection = () => {
 
             {/* About Title */}
             <p className="font-bold text-[30px] text-sbText mb-4">
-                About SkoolBeep
+                About School Lift
             </p>
 
             {/* About Paragraph */}
@@ -108,7 +108,7 @@ const AboutSection = () => {
             </p>
 
             <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto mb-6">
-                SkoolBeep is a trusted technology partner offering high-quality,
+                School Lift is a trusted technology partner offering high-quality,
                 affordable and scalable solutions to schools across India. As a company,
                 we are equally passionate about education and technology. Our solutions
                 can empower teachers, enhance learning experiences for students, keep
@@ -116,7 +116,7 @@ const AboutSection = () => {
             </p>
 
             <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto mb-6">
-                SkoolBeep has a whole range of technology solutions that revolutionize
+                School Lift has a whole range of technology solutions that revolutionize
                 every aspect of running a school from integrated classroom solutions to
                 home learning solutions and school management software.
             </p>
@@ -407,14 +407,14 @@ const OurTeamSection = () => {
         {
             name: "Anurag Gopinath",
             role: "CO-FOUNDER & CEO",
-            img: "https://www.skoolbeep.com/new/images/team/Anurag.jpg",
+            img: "https://www.schoollift.com/new/images/team/Anurag.jpg",
             email: "#",
             linkedin: "#",
         },
         {
             name: "Prasanna Kaliamoorthy",
             role: "CO-FOUNDER & COO",
-            img: "https://www.skoolbeep.com/new/images/team/Prasanna.jpg",
+            img: "https://www.schoollift.com/new/images/team/Prasanna.jpg",
             email: "#",
             linkedin: "#",
         },
@@ -423,11 +423,11 @@ const OurTeamSection = () => {
     const advisors = [
         {
             name: "Rajesh Rege",
-            img: "https://www.skoolbeep.com/new/images/team/Rajesh.jpg",
+            img: "https://www.schoollift.com/new/images/team/Rajesh.jpg",
         },
         {
             name: "Ponnappa PG",
-            img: "https://www.skoolbeep.com/new/images/team/Ponnappa.jpg",
+            img: "https://www.schoollift.com/new/images/team/Ponnappa.jpg",
         },
     ];
 

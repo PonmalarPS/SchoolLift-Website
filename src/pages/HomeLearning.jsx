@@ -591,7 +591,7 @@ const LearningPlatformSection = () => {
 
                 {/* RIGHT VIDEO CARD */}
                 <div className="w-[720px] rounded-3xl overflow-hidden shadow-sb bg-black">
-                    <iframe src="https://player.vimeo.com/video/1123084258?h=8372105d9e&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" width="708.711" height="398.633" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Home-and-Classroom-Solutions" data-ready="true"></iframe>
+                    <iframe src="https://player.vimeo.com/video/1123084288?h=72c1b6fcba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=true&loop=1&muted=1" width="708.711" height="398.633" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Home-and-Classroom-Solutions" data-ready="true"></iframe>
                 </div>
 
             </div>
@@ -659,7 +659,7 @@ const WhySkoolPlusLearning = () => {
                 {/* heading */}
                 <div className="mb-8 flex flex-col items-center">
                     <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
-                        @Home Learning - Why Choose SkoolBeep's e-learning
+                        @Home Learning - Why Choose School Lift's e-learning
                     </h2>
                     <div className="mt-4 h-[4px] w-[52px] rounded-full bg-sbPurple" />
                 </div>
@@ -675,7 +675,7 @@ const WhySkoolPlusLearning = () => {
                             OTHER HOME LEARNING SOLUTIONS
                         </div>
                         <div className="bg-sbPurple px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-white">
-                            SKOOLBEEP E-LEARN
+                            SCHOOL LIFT E-LEARN
                         </div>
                     </div>
 
@@ -740,7 +740,7 @@ const FrequentlyAskedQuestions = () => {
     const faqItems = [
         {
             id: 1,
-            question: "What's SkoolBeep’s home learning solution?",
+            question: "What's School Lift’s home learning solution?",
             answer: `Our home learning solution equips students with high-quality resources to continue their learning at home. By subscribing to our online learning platform, schools can give students access to syllabus-aligned content and multimedia resources used by the teachers in the classroom.
 
 Here are some more reasons why our home-learning solutions are highly recommended:
@@ -752,15 +752,15 @@ Here are some more reasons why our home-learning solutions are highly recommende
         },
         {
             id: 2,
-            question: "Who can subscribe for Skoolbeep’s home learning?",
+            question: "Who can subscribe for School Lift’s home learning?",
             answer: `It is highly recommended that schools take the initiative to subscribe for students and enable access. This ensures all students have access to high-quality resources at a very affordable cost and reduces dependency on tuition.
 
-Individual students can also subscribe to Skoolbeep’s e-learning solution provided the school has any of SkoolBeep’s other solutions like School Management or Classroom solutions.`,
+Individual students can also subscribe to School Lift’s e-learning solution provided the school has any of School Lift’s other solutions like School Management or Classroom solutions.`,
         },
         {
             id: 3,
-            question: "Why should a school subscribe to Skoolbeep e-learning portal?",
-            answer: `By subscribing to Skoolbeep’s e-learning portal, schools can:
+            question: "Why should a school subscribe to School Lift e-learning portal?",
+            answer: `By subscribing to School Lift’s e-learning portal, schools can:
 
 1.e-learning in education enables better outcomes for students
 2.Give access to different learning methods and resources

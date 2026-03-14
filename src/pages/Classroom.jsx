@@ -57,7 +57,7 @@ import gif5 from "../assets/classroom-icons/Notes_Screen4.gif";
 const accordionItems = [
     {
         id: 1,
-        title: "Take attendance using the SkoolBeep app",
+        title: "Take attendance using the School Lift app",
         content:
             "A few clicks and all data is captured and organized in the student database. Save on teaching time.",
         gif: gif2,
@@ -265,7 +265,7 @@ const EmpoweredTeachersSection = () => {
 
                 {/* RIGHT VIDEO CARD */}
                 <div className="w-[800px] rounded-3xl overflow-hidden shadow-sb bg-black">
-                    <iframe src="https://player.vimeo.com/video/1123084258?h=8372105d9e&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" width="708.711" height="398.633" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Home-and-Classroom-Solutions" data-ready="true"></iframe>
+                    <iframe src="https://player.vimeo.com/video/1123084258?h=8372105d9e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=true&loop=1&muted=1" width="708.711" height="398.633" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Home-and-Classroom-Solutions" data-ready="true"></iframe>
                 </div>
 
             </div>
@@ -568,7 +568,7 @@ const WhySkoolPlus = () => {
             otherText: "Not accessible",
             plusIcon: icNotes,
             plusText:
-                "Accessible using SkoolBeep app. Students can submit homework and access same material used in class.",
+                "Accessible using School Lift app. Students can submit homework and access same material used in class.",
         },
         {
             feature: "Support",
@@ -736,10 +736,10 @@ const FrequentlyAskedQuestions = () => {
         },
         {
             id: 2,
-            question: "How is SkoolBeep's classroom solution different from smart classes?",
+            question: "How is School Lift's classroom solution different from smart classes?",
             answer: `Our interactive flat panels have built-in wifi solutions eliminating the need for local servers, LAN, computers, and projectors. Purchase options, installation, maintenance, and support make it hassle-free for schools.
 
-SkoolBeep's classroom solutions empower the teacher with a multimedia content repository and assessments organized by chapters. The content is updated weekly saving hours spent on research.
+School Lift's classroom solutions empower the teacher with a multimedia content repository and assessments organized by chapters. The content is updated weekly saving hours spent on research.
 
 The ability to continue learning with the same resources at home and personalization instills confidence and supports skill development in students.`,
         },
@@ -777,12 +777,12 @@ Feedback on learning outcomes, concepts and progress.`,
         {
             id: 6,
             question: "How many questions are there in the question bank?",
-            answer: `SkoolBeep has curated more than 1 lakh unique questions across all subjects. For each class, we have 100+ questions per chapter and 1500 questions per subject.`,
+            answer: `School Lift has curated more than 1 lakh unique questions across all subjects. For each class, we have 100+ questions per chapter and 1500 questions per subject.`,
         },
         {
             id: 7,
-            question: "Apart from the SkoolBeep content, what other content can I use in the classroom?",
-            answer: `SkoolBeep has curated and made available some very useful apps for different streams:
+            question: "Apart from the School Lift content, what other content can I use in the classroom?",
+            answer: `School Lift has curated and made available some very useful apps for different streams:
 
 STEM
 Geometry, Anatomy, Robotics/Coding
