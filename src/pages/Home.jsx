@@ -19,9 +19,8 @@ import {
 } from "lucide-react";
 import heroImg from "../assets/home-icons/header-image.webp"; // replace with your image
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
 // ── Background floating icons ──────────────────────────────────────────────
 import icon1 from "../assets/home-icons/1.png";
 import icon2 from "../assets/home-icons/2.png";
@@ -1060,7 +1059,7 @@ const OurClients = () => {
                 </div>
 
                 <Swiper
-                    modules={[Autoplay, Pagination]}
+                    modules={[Autoplay]}
                     spaceBetween={30}
                     slidesPerView={1}
                     loop={true}
@@ -1074,7 +1073,6 @@ const OurClients = () => {
                         1280: { slidesPerView: 4 },
                         1536: { slidesPerView: 5 },
                     }}
-                    pagination={{ clickable: true }}
                     className="pb-5"
                 >
                     {clients.map((client) => (

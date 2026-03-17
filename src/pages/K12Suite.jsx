@@ -30,6 +30,10 @@ import topShape from "../assets/k12-suite-icons/top-shape.png";
 import smallIcon1 from "../assets/k12-suite-icons/small-icon-1.png";
 import smallIcon2 from "../assets/k12-suite-icons/small-icon-2.png";
 import smallIcon3 from "../assets/k12-suite-icons/small-icon-3.png";
+import userfriendly from "../assets/k12-suite-icons/userfriendly.png";
+import aiEnable from "../assets/k12-suite-icons/aIenabled.png";
+import cloudFirst from "../assets/k12-suite-icons/cloudfirst.png";
+import secureIntegrated from "../assets/k12-suite-icons/secureIntegrated.png";
 import aiDrivenBuilder from "../assets/k12-suite-icons/ai-driven-builder.webp";
 import amplifyAdmissions from "../assets/k12-suite-icons/amplify-admissions.webp";
 import digitaliseAttendance from "../assets/k12-suite-icons/digitalise-attendance.webp";
@@ -242,11 +246,11 @@ const K12Suite = () => {
 
 const K12SuiteSection = () => {
     return (
-        <section className="relative w-full overflow-hidden rounded-b-[26px] bg-[#efdf95]">
+        <section className="relative w-full overflow-hidden rounded-b-[26px]">
             <div className="relative mx-auto min-h-[1500px] w-full max-w-[1792px] overflow-hidden">
                 <K12SuiteHero />
                 <K12Clients />
-                <K12BottomShowcase />
+                <K12EdtechSection />
             </div>
         </section>
     );
@@ -304,11 +308,6 @@ const K12SuiteHero = () => {
 
                 {/* Right composition */}
                 <div className="relative hidden lg:block">
-                    <img
-                        src={circle}
-                        alt=""
-                        className="pointer-events-none absolute right-[120px] top-[0px] z-[1] w-[420px] object-contain opacity-55"
-                    />
 
                     <img
                         src={smallIcon3}
@@ -327,12 +326,6 @@ const K12SuiteHero = () => {
                         alt="K-12 Suite preview"
                         className="absolute right-[36px] top-[20px] z-[5] w-[540px] max-w-none object-contain"
                     />
-
-                    <img
-                        src={k12SuiteImage}
-                        alt=""
-                        className="absolute right-[130px] top-[248px] z-[6] w-[150px] max-w-none object-contain"
-                    />
                 </div>
             </div>
         </div>
@@ -341,7 +334,7 @@ const K12SuiteHero = () => {
 
 const K12Clients = () => {
     return (
-        <section className="relative w-full overflow-hidden py-[10px]">
+        <section className="relative w-full overflow-hidden py-[10px] bg-[#ffeb98]">
             <div className="relative overflow-hidden">
                 {/* left fade */}
                 <div className="pointer-events-none absolute left-0 top-0 z-20 h-full w-[120px] bg-gradient-to-r from-white to-transparent" />
@@ -378,321 +371,152 @@ const K12Clients = () => {
     );
 };
 
-const K12BottomShowcase = () => {
+const K12EdtechSection = () => {
     return (
         <section className="relative w-full overflow-hidden bg-transparent">
+
             <div
                 className="
-          relative mx-auto h-[820px] w-full max-w-[1792px] overflow-hidden rounded-b-[24px]
-          bg-[linear-gradient(to_bottom,#FFEB99_0%,#FFEB99_43%,#F3F3F3_43%,#F3F3F3_100%)]
-        "
+  relative mx-auto w-full max-w-[1792px]
+  overflow-hidden rounded-b-[24px]
+  min-h-[1200px]
+"
             >
-                {/* soft warm tint */}
-                <div className="pointer-events-none absolute bottom-0 right-0 z-[1] h-[54%] w-[28%] bg-[linear-gradient(to_left,rgba(246,239,225,0.78),rgba(246,239,225,0))]" />
+
+                {/* right gradient */}
+                <div className="pointer-events-none absolute bottom-0 right-0 z-[1] h-[55%] w-[28%]]" />
 
                 {/* heading */}
-                <div className="absolute left-1/2 top-[36px] z-[40] -translate-x-1/2 text-center">
-                    <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-black">
+                <div className="absolute left-0 right-0 top-0 z-[15] flex flex-col items-center bg-[#ffeb98] pt-8">
+                    <p className="text-[33px] font-bold leading-tight text-black">
                         Next-Gen EdTech Starts Here
-                    </h2>
-                    <p className="mt-[10px] text-[15px] font-medium text-[#4F5965]">
+                    </p>
+                    <p className="mt-4 text-[21px] font-medium tracking-wide text-sbTextLight">
                         Perseverance Personified
                     </p>
                 </div>
 
-                {/* orbit circles - FIXED smaller and fully visible */}
-                <img
-                    src={circle}
-                    alt=""
-                    className="pointer-events-none absolute left-1/2 top-[150px] z-[5] w-[760px] -translate-x-1/2 object-contain opacity-[0.68]"
-                />
+                {/* orbit circles */}
+                <div className="absolute left-1/2 top-[120px] z-[5] -translate-x-1/2 overflow-hidden w-[900px] h-[900px]">
 
+                    <img
+                        src={circle}
+                        alt=""
+                        className="
+    absolute
+    left-1/2
+    top-[-300px]
+    w-[900px]
+    -translate-x-1/2
+    object-contain
+    opacity-[0.8]"
+                    />
+
+                </div>
                 {/* main composition */}
-                <div className="absolute inset-x-0 top-[210px] z-[10] flex justify-center">
-                    <div className="relative h-[560px] w-[860px]">
-                        {/* user-friendly */}
-                        <div className="absolute left-[180px] top-[82px] z-[13] text-center">
-                            <div className="mx-auto mb-[6px] flex h-[34px] w-[42px] items-center justify-center">
-                                <svg
-                                    viewBox="0 0 52 40"
-                                    className="h-[34px] w-[42px]"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <circle cx="16" cy="13" r="6.5" stroke="#3f3f3f" strokeWidth="2" />
-                                    <circle cx="28" cy="14" r="6.5" stroke="#3f3f3f" strokeWidth="2" />
-                                    <circle cx="22" cy="27" r="6.5" stroke="#3f3f3f" strokeWidth="2" />
-                                    <circle cx="34" cy="27" r="6.5" fill="#49A84E" stroke="#3f3f3f" strokeWidth="2" />
-                                    <circle cx="9" cy="26" r="6.5" fill="#F2CF21" stroke="#3f3f3f" strokeWidth="2" />
-                                </svg>
-                            </div>
-                            <p className="text-[15px] font-semibold leading-none text-[#4C4C4C]">
-                                User-friendly
-                            </p>
+                <div className="absolute inset-x-0 top-[22%] z-[10] flex justify-center">
+
+                    <div className="relative w-[min(920px,94vw)] aspect-[16/10]">
+
+                        {/* rocket stack */}
+                        <div className="absolute left-[45%] top-[28%] -translate-x-1/2 flex flex-col items-center">
+
+                            {/* rocket */}
+                            <img
+                                src={rocket}
+                                alt="rocket"
+                                className="mt-[50px] w-[clamp(260px,18vw,320px)] object-contain"
+                            />
+
+                            {/* fire */}
+                            <img
+                                src={fire}
+                                alt="fire"
+                                className="-mt-[120px] ml-[80px] z-20 w-[clamp(35px,4vw,60px)] object-contain"
+                            />
+
+                            {/* globe */}
+                            <img
+                                src={base}
+                                alt="globe"
+                                className="-mt-[40px] ml-[90px] z-10 w-[clamp(280px,15vw,320px)] object-contain drop-shadow-[0_16px_22px_rgba(0,0,0,0.16)]"
+                            />
+
                         </div>
 
-                        {/* secure */}
-                        <div className="absolute left-[96px] top-[274px] z-[13] text-center">
-                            <div className="mx-auto mb-[6px] flex h-[34px] w-[54px] items-center justify-center">
-                                <svg
-                                    viewBox="0 0 64 40"
-                                    className="h-[34px] w-[54px]"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <circle cx="16" cy="13" r="8" stroke="#444" strokeWidth="2" />
-                                    <path d="M26 18L34 24" stroke="#444" strokeWidth="2" strokeLinecap="round" />
-                                    <path d="M34 24L46 16" stroke="#F3CF1D" strokeWidth="4" strokeLinecap="round" />
-                                    <circle cx="46" cy="16" r="7" fill="#F3CF1D" stroke="#444" strokeWidth="2" />
-                                    <path d="M50 23L56 29" stroke="#444" strokeWidth="2" strokeLinecap="round" />
-                                    <circle cx="30" cy="28" r="5" fill="#fff" stroke="#444" strokeWidth="2" />
-                                </svg>
+                        {/* left label */}
+                        <div className="absolute left-[3%] top-[44%] z-[13] text-center">
+
+                            <div className="mx-auto mb-1.5 flex h-[24px] w-[44px] items-center justify-center">
+                                <img src={secureIntegrated} alt="" className="h-full w-auto object-contain" />
                             </div>
-                            <p className="text-[15px] font-semibold leading-none text-[#4C4C4C]">
-                                Secure &amp; Integrated
+
+                            <p className="text-[clamp(13px,1vw,15px)] font-semibold text-[#4C4C4C]">
+                                Secure & Integrated
                             </p>
+
                         </div>
 
-                        {/* AI */}
-                        <div className="absolute right-[206px] top-[228px] z-[13] text-center">
-                            <div className="mx-auto mb-[6px] flex h-[38px] w-[38px] items-center justify-center rounded-[9px] border-[2px] border-[#444] bg-white text-[18px] font-semibold leading-none text-[#444]">
-                                AI
+                        <div className="absolute left-[30%] top-[33%] z-[13] text-center">
+
+                            <div className="mx-auto mb-1.5 flex h-[24px] w-[44px] items-center justify-center">
+                                <img src={userfriendly} alt="" className="h-full w-auto object-contain" />
                             </div>
-                            <p className="text-[15px] font-semibold leading-none text-[#4C4C4C]">
+
+                            <p className="text-[clamp(13px,1vw,15px)] font-semibold text-[#4C4C4C]">
+                                User Friendly
+                            </p>
+
+                        </div>
+
+                        {/* right label */}
+                        <div className="absolute right-[30.5%] top-[53%] z-[13] text-center">
+
+                            <div className="mx-auto mb-1.5 flex h-[30px] w-[30px] items-center justify-center">
+                                <img src={aiEnable} alt="" className="h-full w-auto object-contain" />
+                            </div>
+
+                            <p className="text-[clamp(13px,1vw,15px)] font-semibold text-[#4C4C4C]">
                                 AI-enabled
                             </p>
+
                         </div>
 
-                        {/* Cloud-first */}
-                        <div className="absolute right-[76px] top-[180px] z-[13] text-center">
-                            <div className="mx-auto mb-[6px] flex h-[34px] w-[44px] items-center justify-center">
-                                <svg
-                                    viewBox="0 0 44 34"
-                                    className="h-[32px] w-[40px]"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12 22C6 22 3 18 3 13C3 8 6.5 5 11 5C13.5 5 15.5 5.8 17 7.4C18.8 4.6 21.7 3 25.2 3C31 3 35 7.2 35 12.8C39 13.5 42 16.6 42 21C42 25.8 38.5 29 33.2 29H12"
-                                        fill="#F4D12C"
-                                        stroke="#4A4A4A"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
+                        <div className="absolute right-[4.2%] top-[40%] z-[13] text-center">
+
+                            <div className="mx-auto mb-1.5 flex h-[30px] w-[30px] items-center justify-center">
+                                <img src={cloudFirst} alt="" className="h-full w-auto object-contain" />
                             </div>
-                            <p className="text-[15px] font-semibold leading-none text-[#4C4C4C]">
-                                Cloud-first
+
+                            <p className="text-[clamp(13px,1vw,15px)] font-semibold text-[#4C4C4C]">
+                                Cloud First
                             </p>
+
                         </div>
-
-                        {/* rocket - smaller and higher */}
-                        <img
-                            src={rocket}
-                            alt="rocket"
-                            className="absolute left-1/2 top-[66px] z-[12] w-[212px] -translate-x-1/2 object-contain"
-                        />
-
-                        {/* beam - thinner */}
-                        <img
-                            src={fire}
-                            alt=""
-                            className="absolute left-1/2 top-[300px] z-[11] w-[62px] -translate-x-1/2 object-contain opacity-[0.98]"
-                        />
-
-                        {/* globe - smaller */}
-                        <img
-                            src={base}
-                            alt="globe"
-                            className="absolute left-1/2 bottom-[0px] z-[12] w-[158px] -translate-x-1/2 object-contain drop-shadow-[0_16px_22px_rgba(0,0,0,0.16)]"
-                        />
-
-                        {/* cloud near beam */}
-                        <div className="absolute left-[438px] top-[326px] z-[13]">
-                            <div className="relative h-[34px] w-[62px]">
-                                <span className="absolute bottom-0 left-0 h-[16px] w-[62px] rounded-full bg-white blur-[1px]" />
-                                <span className="absolute bottom-[7px] left-[6px] h-[18px] w-[18px] rounded-full bg-white" />
-                                <span className="absolute bottom-[10px] left-[23px] h-[24px] w-[24px] rounded-full bg-white" />
-                                <span className="absolute bottom-[8px] left-[43px] h-[16px] w-[16px] rounded-full bg-white" />
-                            </div>
-                        </div>
-
-                        {/* small cloud */}
-                        <div className="absolute left-[388px] top-[438px] z-[13] opacity-80">
-                            <div className="relative h-[22px] w-[40px]">
-                                <span className="absolute bottom-0 left-0 h-[10px] w-[40px] rounded-full bg-white blur-[1px]" />
-                                <span className="absolute bottom-[4px] left-[4px] h-[11px] w-[11px] rounded-full bg-white" />
-                                <span className="absolute bottom-[7px] left-[15px] h-[15px] w-[15px] rounded-full bg-white" />
-                                <span className="absolute bottom-[5px] left-[29px] h-[9px] w-[9px] rounded-full bg-white" />
-                            </div>
-                        </div>
-
-                        {/* right cloud */}
-                        <div className="absolute right-[206px] top-[492px] z-[13] opacity-85">
-                            <div className="relative h-[38px] w-[68px]">
-                                <span className="absolute bottom-0 left-0 h-[18px] w-[68px] rounded-full bg-white blur-[1px]" />
-                                <span className="absolute bottom-[7px] left-[6px] h-[20px] w-[20px] rounded-full bg-white" />
-                                <span className="absolute bottom-[11px] left-[25px] h-[26px] w-[26px] rounded-full bg-white" />
-                                <span className="absolute bottom-[8px] left-[48px] h-[17px] w-[17px] rounded-full bg-white" />
-                            </div>
-                        </div>
-
-                        {/* dots */}
-                        <div className="absolute left-[280px] top-[336px] z-[13] h-[6px] w-[6px] rounded-full bg-[#EFC31A]" />
-                        <div className="absolute right-[120px] top-[350px] z-[13] h-[6px] w-[6px] rounded-full bg-[#EFC31A]" />
-                        <div className="absolute right-[74px] top-[476px] z-[13] h-[6px] w-[6px] rounded-full bg-[#EFC31A]" />
-                        <div className="absolute right-[48px] top-[242px] z-[13] h-[8px] w-[8px] rounded-full bg-[#35A047]" />
                     </div>
+
                 </div>
 
-                {/* wave shape - fixed and not cutting circle */}
+                {/* wave shape */}
                 <img
                     src={topShape}
                     alt=""
-                    className="pointer-events-none absolute left-1/2 top-[156px] z-[20] w-[1792px] -translate-x-1/2 object-cover"
+                    className="
+  pointer-events-none
+  absolute
+  left-1/2
+  top-[120px]
+  z-[8]
+  w-full
+  min-w-[1500px]
+  -translate-x-1/2
+"
                 />
             </div>
+
         </section>
     );
-};// const K12BottomShowcase = () => {
-//     return (
-//         <section className="relative w-full overflow-hidden bg-transparent">
-//             <div
-//                 className="relative mx-auto w-full max-w-[1792px] overflow-hidden rounded-b-[24px]
-//   min-h-[600px]
-//   bg-[linear-gradient(to_bottom,#F2E29A_0%,#F2E29A_45%,#FFFFFF,#FFFFFF)]"
-//             >
-//                 <div className="pointer-events-none absolute bottom-0 right-0 z-[1] h-[55%] w-[28%] bg-[linear-gradient(to_left,rgba(246,239,225,0.78),rgba(246,239,225,0))]" />
-
-//                 <div className="absolute left-1/2 top-6 z-[40] -translate-x-1/2 text-center">
-//                     <h2 className="text-[clamp(22px,2.2vw,27px)] font-extrabold tracking-[-0.02em] text-black">
-//                         Next-Gen EdTech Starts Here
-//                     </h2>
-//                     <p className="mt-2 text-[clamp(13px,1.2vw,15px)] font-medium text-[#4F5965]">
-//                         Perseverance Personified
-//                     </p>
-//                 </div>
-
-//                 {/* orbit circles - smaller */}
-//                 <img
-//                     src={circle}
-//                     alt=""
-//                     className="
-//             pointer-events-none absolute left-1/2 top-[5.0%] z-[5]
-//             w-[clamp(500px,35vw,650px)] -translate-x-1/2 object-contain opacity-[0.76]
-//           "
-//                 />
-
-//                 {/* main composition */}
-//                 <div className="absolute inset-x-0 top-[24%] z-[10] flex justify-center">
-//                     <div className="relative w-[min(920px,94vw)] aspect-[16/10]">
-//                         {/* center stack */}
-//                         <div className="absolute left-1/2 top-[8%] z-[12] -translate-x-1/2 flex flex-col items-center">
-//                             {/* rocket + astronaut */}
-//                             <img
-//                                 src={rocket}
-//                                 alt="rocket"
-//                                 className="w-[clamp(165px,11vw,195px)] object-contain"
-//                             />
-
-//                             {/* beam */}
-//                             <img
-//                                 src={fire}
-//                                 alt=""
-//                                 className="-mt-[10px] w-[clamp(54px,3.6vw,66px)] object-contain opacity-[0.98]"
-//                             />
-
-//                             {/* globe */}
-//                             <img
-//                                 src={base}
-//                                 alt="globe"
-//                                 className="-mt-[8px] w-[clamp(148px,9.5vw,178px)] object-contain drop-shadow-[0_16px_22px_rgba(0,0,0,0.16)]"
-//                             />
-//                         </div>
-
-//                         {/* left label */}
-//                         <div className="absolute left-[17%] top-[44%] z-[13] text-center">
-//                             <div className="mx-auto mb-1.5 flex h-[34px] w-[54px] items-center justify-center">
-//                                 <svg
-//                                     viewBox="0 0 64 40"
-//                                     className="h-[34px] w-[54px]"
-//                                     fill="none"
-//                                     xmlns="http://www.w3.org/2000/svg"
-//                                 >
-//                                     <circle cx="16" cy="13" r="8" stroke="#444" strokeWidth="2" />
-//                                     <path d="M26 18L34 24" stroke="#444" strokeWidth="2" strokeLinecap="round" />
-//                                     <path d="M34 24L46 16" stroke="#F3CF1D" strokeWidth="4" strokeLinecap="round" />
-//                                     <circle cx="46" cy="16" r="7" fill="#F3CF1D" stroke="#444" strokeWidth="2" />
-//                                     <path d="M50 23L56 29" stroke="#444" strokeWidth="2" strokeLinecap="round" />
-//                                     <circle cx="30" cy="28" r="5" fill="#fff" stroke="#444" strokeWidth="2" />
-//                                 </svg>
-//                             </div>
-//                             <p className="text-[clamp(13px,1vw,15px)] font-semibold leading-none text-[#4C4C4C]">
-//                                 Secure &amp; Integrated
-//                             </p>
-//                         </div>
-
-//                         {/* right label */}
-//                         <div className="absolute right-[24%] top-[33%] z-[13] text-center">
-//                             <div className="mx-auto mb-1.5 flex h-[38px] w-[38px] items-center justify-center rounded-[9px] border-[2px] border-[#444] bg-white text-[18px] font-semibold leading-none text-[#444]">
-//                                 AI
-//                             </div>
-//                             <p className="text-[clamp(13px,1vw,15px)] font-semibold leading-none text-[#4C4C4C]">
-//                                 AI-enabled
-//                             </p>
-//                         </div>
-
-//                         {/* cloud near beam */}
-//                         <div className="absolute left-[50.5%] top-[58%] z-[13]">
-//                             <div className="relative h-[34px] w-[62px]">
-//                                 <span className="absolute bottom-0 left-0 h-[16px] w-[62px] rounded-full bg-white blur-[1px]" />
-//                                 <span className="absolute bottom-[7px] left-[6px] h-[18px] w-[18px] rounded-full bg-white" />
-//                                 <span className="absolute bottom-[10px] left-[23px] h-[24px] w-[24px] rounded-full bg-white" />
-//                                 <span className="absolute bottom-[8px] left-[43px] h-[16px] w-[16px] rounded-full bg-white" />
-//                             </div>
-//                         </div>
-
-//                         {/* small cloud */}
-//                         <div className="absolute left-[47%] top-[76%] z-[13] opacity-80">
-//                             <div className="relative h-[22px] w-[40px]">
-//                                 <span className="absolute bottom-0 left-0 h-[10px] w-[40px] rounded-full bg-white blur-[1px]" />
-//                                 <span className="absolute bottom-[4px] left-[4px] h-[11px] w-[11px] rounded-full bg-white" />
-//                                 <span className="absolute bottom-[7px] left-[15px] h-[15px] w-[15px] rounded-full bg-white" />
-//                                 <span className="absolute bottom-[5px] left-[29px] h-[9px] w-[9px] rounded-full bg-white" />
-//                             </div>
-//                         </div>
-
-//                         {/* right cloud */}
-//                         <div className="absolute right-[27%] top-[84%] z-[13] opacity-85">
-//                             <div className="relative h-[38px] w-[68px]">
-//                                 <span className="absolute bottom-0 left-0 h-[18px] w-[68px] rounded-full bg-white blur-[1px]" />
-//                                 <span className="absolute bottom-[7px] left-[6px] h-[20px] w-[20px] rounded-full bg-white" />
-//                                 <span className="absolute bottom-[11px] left-[25px] h-[26px] w-[26px] rounded-full bg-white" />
-//                                 <span className="absolute bottom-[8px] left-[48px] h-[17px] w-[17px] rounded-full bg-white" />
-//                             </div>
-//                         </div>
-
-//                         {/* decorative dots */}
-//                         <div className="absolute left-[33.8%] top-[53.5%] z-[13] h-[6px] w-[6px] rounded-full bg-[#EFC31A]" />
-//                         <div className="absolute right-[14.2%] top-[52%] z-[13] h-[6px] w-[6px] rounded-full bg-[#EFC31A]" />
-//                         <div className="absolute right-[8.2%] top-[71.8%] z-[13] h-[6px] w-[6px] rounded-full bg-[#EFC31A]" />
-//                     </div>
-//                 </div>
-
-//                 {/* wave shape - front */}
-//                 <img
-//                     src={topShape}
-//                     alt=""
-//                     className="
-//             pointer-events-none absolute left-1/2 top-[13.7%] z-[20]
-//             h-auto w-full min-w-[1500px] -translate-x-1/2 object-cover
-//           "
-//                 />
-//             </div>
-//         </section>
-//     );
-// };
+};
 
 const K12MarketingSection = () => {
     const sectionRefs = useRef({});
@@ -820,7 +644,7 @@ const K12MarketingSection = () => {
                                     ))}
                                 </div>
 
-                                <button className="mt-[20px] inline-flex items-center gap-[12px] text-[18px] font-medium text-black">
+                                <button className="mt-[20px] inline-flex items-center gap-[12px] text-[20px] font-medium text-black">
                                     <span>Learn more</span>
                                     <ArrowRightCircle
                                         size={21}
@@ -969,17 +793,17 @@ const FrequentlyAskedQuestions = () => {
             question: "What are the core modules and features of K-12 Suite?",
             answer: `The cloud-first K-12 Suite by School Lift offers a comprehensive range of applications and tools to manage schools efficiently. Key features include:
 
-Student Information System (SIS): Centralised student profiles and records
-Attendance Management: Daily tracking & reports for students and staff
-Timetable & Scheduling - Easy creation & management of class schedules
-Enrollments & Admissions: Digital forms, tracking, & automated processes
-Fee Management - Automated billing, financial reports, & online payments
-Examination & Report Cards - Online assessments, grading, and progress reports
-Library Management - Catalogues, inventory tracking, and lending
-Parent & Teacher Communication - Portals, mobile apps, notifications, and messaging
-Transport Management - Route planning and student transport tracking
-Online Learning Tools - Virtual classes, assignments, and resource sharing
-Analytics & Reports - Powerful insights into school performance
+1. Student Information System (SIS): Centralised student profiles and records
+2. Attendance Management: Daily tracking & reports for students and staff
+3. Timetable & Scheduling - Easy creation & management of class schedules
+4. Enrollments & Admissions: Digital forms, tracking, & automated processes
+5. Fee Management - Automated billing, financial reports, & online payments
+6. Examination & Report Cards - Online assessments, grading, and progress reports
+7. Library Management - Catalogues, inventory tracking, and lending
+8. Parent & Teacher Communication - Portals, mobile apps, notifications, and messaging
+9. Transport Management - Route planning and student transport tracking
+10. Online Learning Tools - Virtual classes, assignments, and resource sharing
+11. Analytics & Reports - Powerful insights into school performance
 The K-12 Suite by School Lift is modular, so its features can be configured to best fit school's needs.`
         },
         {

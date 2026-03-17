@@ -27,6 +27,9 @@ export default {
         primary: "var(--font-primary)",
         heading: "var(--font-heading)",
       },
+      animation: {
+        'spin-slow': 'spin 50s linear infinite',
+      }
     },
   },
 };
