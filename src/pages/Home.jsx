@@ -191,7 +191,7 @@ const HeaderSection = () => {
 
 
                 {/* Inner White Circle */}
-                <div className="w-[300px] h-[500px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden shrink-0">
+                <div className="w-[320px] h-[320px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden shrink-0">
                     <img
                         src={heroImg}
                         alt="Student"
