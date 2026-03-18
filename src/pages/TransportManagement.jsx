@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HeroSection from "../component/HeroSection";
 import CommonButton from "../component/CommonButton";
 import {
     Users,
@@ -32,7 +33,7 @@ import homeLearningBg from "../assets/home-icons/home-learning-bg.png";
 const TransportManagement = () => {
     return (
         <div className="font-primary bg-white text-sbText">
-            <HeroSection />
+            <HeroSection imgSrc={heroImg} />
             <SchoolBusManagementSection />
             <KnowMore />
             <SchoolBusTrackingSystem />
@@ -42,18 +43,6 @@ const TransportManagement = () => {
             <ExceptionalFeaturesSection />
             <FrequentlyAskedQuestions />
         </div>
-    );
-};
-
-const HeroSection = () => {
-    return (
-        <section className="relative w-full h-[600px] overflow-hidden">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${heroImg})` }}
-            />
-        </section>
     );
 };
 

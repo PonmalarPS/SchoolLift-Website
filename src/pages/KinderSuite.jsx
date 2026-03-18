@@ -8,15 +8,16 @@ import {
     Bus,
     ArrowRightCircle,
     ArrowUp,
-    ChevronDown,
-    ChevronUp,
     CheckCircle2,
     CheckCircle,
     Check,
     ArrowRight,
     ChevronLeft,
-    ChevronRight
+    ChevronRight,
+    ChevronDown,
+    ChevronUp
 } from "lucide-react";
+import FrequentlyAskedQuestions from "../component/FrequentlyAskedQuestions";
 import bannerImgBackground from "../assets/kinder-suite-icons/kinder-suite-banner-bg.webp";
 import bannerImg from "../assets/kinder-suite-icons/kinder-suite-banner.webp";
 import actionBanner from "../assets/kinder-suite-icons/action-banner.webp";
@@ -27,6 +28,90 @@ import coachProIcon from "../assets/kinder-suite-icons/coachPro.png";
 import k12SuiteIcon from "../assets/kinder-suite-icons/k12Suite.png";
 import kinderSuiteIcon from "../assets/kinder-suite-icons/kinderSuite.png";
 import tutorEdgeIcon from "../assets/kinder-suite-icons/tutorEdge.png";
+
+const faqItems = [
+    {
+        id: 1,
+        question: "What is Kinder Suite?",
+        answer: `Kinder Suite is an all-in-one AI-powered preschool management software offered by School Lift. It helps kindergartens, creches, playschools, preschools, kindergartens, daycare centers, and early learning institutions streamline academic and administrative tasks, manage student data, communicate with parents, and deliver engaging schooling experiences, to name a few.`
+    },
+    {
+        id: 2,
+        question: "What is preschool management software?",
+        answer: `Preschool management software is a digitalised tool that is designed to help daycares centers, playschools, preschools, creches, and kindergartens efficiently operate and manage their daily operations. The software is dedicated to streamlining academic and administrative, and communication-related tasks through a centralised platform.`
+    },
+    {
+        id: 3,
+        question: "Who can best use Kinder Suite?",
+        answer: "The integrated Kinder Suite by School Lift is the go-to suite for preschool owners and playschool administrators. The suite also empowers preschool teachers, playschool educators, and related stakeholders to automate their daily activities. Additionally, the Kinder Suite also extends its expertise to daycare and creches, kindergarten franchises, and early childhood schooling chains.",
+    },
+    {
+        id: 4,
+        question: "What are the key features of Kinder Suite?",
+        answer: `
+Some of the unique features of School Lift' Kinder Suite include:
+
+1.Intuitive mobile app access
+2.Student admission & enrollment
+3.Automatic attendance tracking
+4.Invoicing & fee management
+5.Instant parent connect portal
+6.Digital course planning
+7.Holistic progress reports
+8.Personalised remedial action planning tools
+9.Live school feed sharing with parents
+10.Transport tracking
+11.Staff & inventory management`
+    },
+    {
+        id: 5,
+        question: "Is Kinder Suite by School Lift a cloud-based platform?",
+        answer: `Yes! KinderSuite is a cloud-first platform for anywhere and anytime access. Any and every academic and administrative operation can be managed securely from anywhere, on any device — desktop, mobile, or tab.`
+    },
+    {
+        id: 6,
+        question: "Is the Kinder Suite by School Lift secure?",
+        answer: `Absolutely, the Kinder Suite by School Lift is compliant with advanced data encryption and security protocols to guarantee the safety and privacy of all data related to students, staff, and parents, or the institutions.`
+    },
+    {
+        id: 7,
+        question: "Is Kinder Suite by School Lift capable of improving parent engagement?",
+        answer: `Yes. Kinder Suite by School Lift includes seamless parent communication tools like messaging, photo/video (multimedia) sharing, digital alerts/notifications, and progress updates, keeping parents involved in their child’s crucial early educational journey.`,
+    },
+    {
+        id: 8,
+        question: "Does Kinder Suite provide any mobile app?",
+        answer: `Yes, Kinder Suite by School Lift offers an intuitive mobile app available for both iOS and Android. The app is adaptable for user-friendly navigation by teachers, students, and parents to provide seamless communication, management, and operations on the go.`
+    },
+    {
+        id: 9,
+        question: "Does Kinder Suite by School Lift support the management of multiple branches?",
+        answer: `Yes, Kinder Suite by School Lift is a niche cloud-based application that is designed to manage multiple branches or franchises from an integrated, unified dashboard, ideal for preschool chains or play school franchises.`
+    },
+    {
+        id: 10,
+        question: "Do we have the provision to customise the Kinder Suite as per our preschool’s needs?",
+        answer: `Yes. The Kinder Suite by School Lift aims to streamline institutes’ unique workflows, branches, branding, and operational needs.`
+    },
+    {
+        id: 11,
+        question: "How can I get a free demo of the Kinder Suite by School Lift?",
+        answer: `Visit the School Lift website and fill out the free demo request form to get started with the Kinder Suite. You can also contact our team; we will be happy to schedule a personalised walkthrough for you.`
+    },
+    {
+        id: 12,
+        question: "What are the crucial benefits of Preschool Management Software?",
+        answer: `A highly adaptable and configurable preschool management system should be able to provide some of the major highlights, such as:
+
+1.Safeguarding Time: Saves up to an hour or two per day per staff member
+2.Economic: Automate your school, work with any device anywhere, anytime
+3.Boosts School's Growth: Increase enrollment rates, brand visibility and stakeholder satisfaction
+4.Hybrid Mode Learning: Equip educators and learners with online, offline and blended learning options
+5.Aggregates the efficiency of staff, management, educators, and learners alike
+6.Harnesses an easier mode of communication and collaboration with stakeholders`
+    }
+];
+
 import linePath1 from "../assets/kinder-suite-icons/line-path-1.png";
 import marketingTools from "../assets/kinder-suite-icons/marketing-tools.webp";
 import parentConnect from "../assets/kinder-suite-icons/parentConnect.webp";
@@ -168,7 +253,7 @@ const KinderSuite = () => {
             <EdTechTreeSection />
             <KinderMarketingSection />
             <OneLoginSlider />
-            <FrequentlyAskedQuestions />
+            <FrequentlyAskedQuestions faqItems={faqItems} title="Kinder Suite FAQ" />
             <SchoolLiftActionBanner />
         </div>
     );
@@ -559,164 +644,6 @@ function OneLoginSlider() {
 
             </div>
         </section>
-    );
-}
-
-const FrequentlyAskedQuestions = () => {
-    const [openId, setOpenId] = useState(null);
-    const faqItems = [
-        {
-            id: 1,
-            question: "What is Kinder Suite?",
-            answer: `Kinder Suite is an all-in-one AI-powered preschool management software offered by School Lift. It helps kindergartens, creches, playschools, preschools, kindergartens, daycare centers, and early learning institutions streamline academic and administrative tasks, manage student data, communicate with parents, and deliver engaging schooling experiences, to name a few.`
-        },
-        {
-            id: 2,
-            question: "What is preschool management software?",
-            answer: `Preschool management software is a digitalised tool that is designed to help daycares centers, playschools, preschools, creches, and kindergartens efficiently operate and manage their daily operations. The software is dedicated to streamlining academic and administrative, and communication-related tasks through a centralised platform.`
-        },
-        {
-            id: 3,
-            question: "Who can best use Kinder Suite?",
-            answer: "The integrated Kinder Suite by School Lift is the go-to suite for preschool owners and playschool administrators. The suite also empowers preschool teachers, playschool educators, and related stakeholders to automate their daily activities. Additionally, the Kinder Suite also extends its expertise to daycare and creches, kindergarten franchises, and early childhood schooling chains.",
-        },
-        {
-            id: 4,
-            question: "What are the key features of Kinder Suite?",
-            answer: `
-            Some of the unique features of School Lift' Kinder Suite include:
-
-1.Intuitive mobile app access
-2.Student admission & enrollment
-3.Automatic attendance tracking
-4.Invoicing & fee management
-5.Instant parent connect portal
-6.Digital course planning
-7.Holistic progress reports
-8.Personalised remedial action planning tools
-9.Live school feed sharing with parents
-10.Transport tracking
-11.Staff & inventory management`
-        },
-        {
-            id: 5,
-            question: "Is Kinder Suite by School Lift a cloud-based platform?",
-            answer: `Yes! KinderSuite is a cloud-first platform for anywhere and anytime access. Any and every academic and administrative operation can be managed securely from anywhere, on any device — desktop, mobile, or tab.`
-        },
-        {
-            id: 6,
-            question: "Is the Kinder Suite by School Lift secure?",
-            answer: `Absolutely, the Kinder Suite by School Lift is compliant with advanced data encryption and security protocols to guarantee the safety and privacy of all data related to students, staff, and parents, or the institutions.`
-        },
-        {
-            id: 7,
-            question: "Is Kinder Suite by School Lift capable of improving parent engagement?",
-            answer: `Yes. Kinder Suite by School Lift includes seamless parent communication tools like messaging, photo/video (multimedia) sharing, digital alerts/notifications, and progress updates, keeping parents involved in their child’s crucial early educational journey.`,
-        },
-        {
-            id: 8,
-            question: "Does Kinder Suite provide any mobile app?",
-            answer: `Yes, Kinder Suite by School Lift offers an intuitive mobile app available for both iOS and Android. The app is adaptable for user-friendly navigation by teachers, students, and parents to provide seamless communication, management, and operations on the go.`
-        },
-        {
-            id: 9,
-            question: "Does Kinder Suite by School Lift support the management of multiple branches?",
-            answer: `Yes, Kinder Suite by School Lift is a niche cloud-based application that is designed to manage multiple branches or franchises from an integrated, unified dashboard, ideal for preschool chains or play school franchises.`
-        },
-        {
-            id: 10,
-            question: "Do we have the provision to customise the Kinder Suite as per our preschool’s needs?",
-            answer: `Yes. The Kinder Suite by School Lift aims to streamline institutes’ unique workflows, branches, branding, and operational needs.`
-        },
-        {
-            id: 11,
-            question: "How can I get a free demo of the Kinder Suite by School Lift?",
-            answer: `Visit the School Lift website and fill out the free demo request form to get started with the Kinder Suite. You can also contact our team; we will be happy to schedule a personalised walkthrough for you.`
-        },
-        {
-            id: 12,
-            question: "What are the crucial benefits of Preschool Management Software?",
-            answer: `A highly adaptable and configurable preschool management system should be able to provide some of the major highlights, such as:
-
-1.Safeguarding Time: Saves up to an hour or two per day per staff member
-2.Economic: Automate your school, work with any device anywhere, anytime
-3.Boosts School's Growth: Increase enrollment rates, brand visibility and stakeholder satisfaction
-4.Hybrid Mode Learning: Equip educators and learners with online, offline and blended learning options
-5.Aggregates the efficiency of staff, management, educators, and learners alike
-6.Harnesses an easier mode of communication and collaboration with stakeholders`
-        }
-    ];
-    return (
-        <section className="relative overflow-hidden bg-white mt-10">
-            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
-                <div className="flex flex-col items-center">
-                    <p className="text-[33px] font-bold leading-tight text-black">
-                        Kinder Suite FAQ
-                    </p>
-
-                    <div className="mt-4 h-[4px] w-[44px] rounded-full bg-[#4e6fb9]" />
-                </div>
-
-                <div className="relative mt-10">
-                    <div className="relative z-10 w-full">
-                        {faqItems.map((item, index) => (
-                            <FaqRow
-                                key={item.id}
-                                item={item}
-                                isOpen={openId === item.id}
-                                isLast={index === faqItems.length - 1}
-                                onToggle={() =>
-                                    setOpenId((prev) => (prev === item.id ? null : item.id))
-                                }
-                            />
-                        ))}
-                    </div>
-
-                    {/* Right bottom decorative image */}
-                    <div className="pointer-events-none absolute bottom-[-80px] right-[-60px] hidden xl:block z-0">
-                        <img
-                            src={homeLearningBg}
-                            alt=""
-                            className="h-[500px] w-auto"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-}
-
-function FaqRow({ item, isOpen, onToggle, isLast }) {
-    return (
-        <div className={`${!isLast ? "border-b border-[#e7e7e7]" : ""}`}>
-            <button
-                onClick={onToggle}
-                className="flex w-full items-center justify-between gap-6 py-[22px] text-left"
-            >
-                <span className="pr-4 text-[17px] font-semibold leading-[1.45] text-[#2f2f2f]">
-                    {item.question}
-                </span>
-
-                <span className="shrink-0 text-[#4e6fb9]">
-                    {isOpen ? (
-                        <ChevronUp className="h-[22px] w-[22px] stroke-[1.8]" />
-                    ) : (
-                        <ChevronDown className="h-[22px] w-[22px] stroke-[1.8]" />
-                    )}
-                </span>
-            </button>
-
-            <div
-                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] pb-4" : "grid-rows-[0fr]"
-                    }`}
-            >
-                <div className="overflow-hidden">
-                    <p className="pb-[10px] text-[16px] leading-[1.9] font-extralight text-[#666666] whitespace-pre-line">
-                        {item.answer}
-                    </p>
-                </div>
-            </div>
-        </div>
     );
 }
 

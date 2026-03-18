@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import HeroSection from "../component/HeroSection";
 import ContactButton from "../component/ContactButton";
 import {
     Users,
@@ -22,23 +23,11 @@ import whatsappLogo from "../assets/contact-icons/whatsapp 11.svg";
 const Contact = () => {
     return (
         <div className="font-primary bg-white text-sbText">
-            <HeroSection />
+            <HeroSection imgSrc={banner} />
             <ContactSection />
             <ContactFormSection />
             <GetInTouch />
         </div>
-    );
-};
-
-const HeroSection = () => {
-    return (
-        <section className="relative w-full h-[600px] overflow-hidden">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${banner})` }}
-            />
-        </section>
     );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from "react";
+import FrequentlyAskedQuestions from "../component/FrequentlyAskedQuestions";
 import CommonButton from "../component/CommonButton";
 import {
     Users,
@@ -232,13 +233,71 @@ const logos = [
     clientLogo8,
 ];
 
+const faqItems = [
+    {
+        id: 1,
+        question: "What is the K-12 Suite by School Lift?",
+        answer: `The K-12 Suite is School Lift' cloud-first, comprehensive school management software. It is designed to streamline every school department—from feed, admissions, attendance, examinations, stakeholder's communication, and analytics—all through a unified, digital platform.`
+    },
+    {
+        id: 2,
+        question: "What is school management software?",
+        answer: `School Management Software is a smart application tool dedicated to helping schools automate, organise, and manage their daily academic and administrative operations. It is like the school's remote control center that digitalises everything, from attendance, admissions, and timetable planning to accounting management, examinations, communication, and reports—all automated from one place. Some of the modern School Management Software also provides 360° dashboards and AI-powered tools to give schools data-backed insights, manage time, and improve efficiency for administrators, teachers, students, and parents.`
+    },
+    {
+        id: 3,
+        question: "What are the core modules and features of K-12 Suite?",
+        answer: `The cloud-first K-12 Suite by School Lift offers a comprehensive range of applications and tools to manage schools efficiently. Key features include:
+
+1. Student Information System (SIS): Centralised student profiles and records
+2. Attendance Management: Daily tracking & reports for students and staff
+3. Timetable & Scheduling - Easy creation & management of class schedules
+4. Enrollments & Admissions: Digital forms, tracking, & automated processes
+5. Fee Management - Automated billing, financial reports, & online payments
+6. Examination & Report Cards - Online assessments, grading, and progress reports
+7. Library Management - Catalogues, inventory tracking, and lending
+8. Parent & Teacher Communication - Portals, mobile apps, notifications, and messaging
+9. Transport Management - Route planning and student transport tracking
+10. Online Learning Tools - Virtual classes, assignments, and resource sharing
+11. Analytics & Reports - Powerful insights into school performance
+The K-12 Suite by School Lift is modular, so its features can be configured to best fit school's needs.`
+    },
+    {
+        id: 4,
+        question: "Does K-12 Suite by School Lift offer a white-labeled mobile app for schools?",
+        answer: `Yes, K-12 Suite by School Lift provides a fully functional white-labeled mobile app for both Android and iOS. School's name, brand colours, logo, can be customised into their personalised app, giving administration, parents, teachers, and students a user-friendly way to access, communicate, information, track progress, and receive real-time notifications and alerts, all under their school’s own brand name.`
+
+    },
+    {
+        id: 5,
+        question: "Does K-12 Suite by School Lift offer a white-labeled website for schools?",
+        answer: `Yes, K-12 Suite by School Lift provides a customised white-labeled website solution, enabling schools to present their brand and value with their own domain, specific logo, colours, and customised content. It also helps schools manage admissions online, display academic information, share announcements, and engage parents and students — all through a professional, enterprise-standard, branded online presence.`
+    },
+    {
+        id: 6,
+        question: "Who can use School Lift K-12 Suite?",
+        answer:
+            `K-12 Suite facilitates the work efficiency of school principals, administrators, staff, teachers, and even parents. The K-12 suite by School Lift is capable of managing any institute, whether a small private school or a large institution; it scales to fit particular needs.`
+    },
+    {
+        id: 7,
+        question: "Is the K-12 Suite by School Lift cloud-based?",
+        answer: `Yes, K-12 Suite is fully automatic and a cloud-first platform. We can access school data securely from anywhere, anytime, and on any device.`
+    },
+    {
+        id: 8,
+        question: "Does the K-12 Suite by School Lift integrate with other systems?",
+        answer: `Yes, the K-12 Suite by School Lift can be seamlessly integrated with advanced ecosystems like accounting systems (Tally Prime), payment gateways, biometric devices, and more, to create a unified ecosystem.`
+    }
+];
+
 const K12Suite = () => {
     return (
         <div className="font-primary bg-white text-sbText">
             <K12SuiteSection />
             <K12MarketingSection />
             <OneLoginSlider />
-            <FrequentlyAskedQuestions />
+            <FrequentlyAskedQuestions faqItems={faqItems} title="K-12 Suite FAQ" />
             <SchoolLiftActionBanner />
         </div>
     );
@@ -769,144 +828,13 @@ function OneLoginSlider() {
                     <img src={playStore} className="h-[40px]" />
                     <img src={appStore} className="h-[40px]" />
                 </div>
-
             </div>
         </section>
     );
 }
 
-const FrequentlyAskedQuestions = () => {
-    const [openId, setOpenId] = useState(null);
-    const faqItems = [
-        {
-            id: 1,
-            question: "What is the K-12 Suite by School Lift?",
-            answer: `The K-12 Suite is School Lift' cloud-first, comprehensive school management software. It is designed to streamline every school department—from feed, admissions, attendance, examinations, stakeholder's communication, and analytics—all through a unified, digital platform.`
-        },
-        {
-            id: 2,
-            question: "What is school management software?",
-            answer: `School Management Software is a smart application tool dedicated to helping schools automate, organise, and manage their daily academic and administrative operations. It is like the school's remote control center that digitalises everything, from attendance, admissions, and timetable planning to accounting management, examinations, communication, and reports—all automated from one place. Some of the modern School Management Software also provides 360° dashboards and AI-powered tools to give schools data-backed insights, manage time, and improve efficiency for administrators, teachers, students, and parents.`
-        },
-        {
-            id: 3,
-            question: "What are the core modules and features of K-12 Suite?",
-            answer: `The cloud-first K-12 Suite by School Lift offers a comprehensive range of applications and tools to manage schools efficiently. Key features include:
 
-1. Student Information System (SIS): Centralised student profiles and records
-2. Attendance Management: Daily tracking & reports for students and staff
-3. Timetable & Scheduling - Easy creation & management of class schedules
-4. Enrollments & Admissions: Digital forms, tracking, & automated processes
-5. Fee Management - Automated billing, financial reports, & online payments
-6. Examination & Report Cards - Online assessments, grading, and progress reports
-7. Library Management - Catalogues, inventory tracking, and lending
-8. Parent & Teacher Communication - Portals, mobile apps, notifications, and messaging
-9. Transport Management - Route planning and student transport tracking
-10. Online Learning Tools - Virtual classes, assignments, and resource sharing
-11. Analytics & Reports - Powerful insights into school performance
-The K-12 Suite by School Lift is modular, so its features can be configured to best fit school's needs.`
-        },
-        {
-            id: 4,
-            question: "Does K-12 Suite by School Lift offer a white-labeled mobile app for schools?",
-            answer: `Yes, K-12 Suite by School Lift provides a fully functional white-labeled mobile app for both Android and iOS. School's name, brand colours, logo, can be customised into their personalised app, giving administration, parents, teachers, and students a user-friendly way to access, communicate, information, track progress, and receive real-time notifications and alerts, all under their school’s own brand name.`
 
-        },
-        {
-            id: 5,
-            question: "Does K-12 Suite by School Lift offer a white-labeled website for schools?",
-            answer: `Yes, K-12 Suite by School Lift provides a customised white-labeled website solution, enabling schools to present their brand and value with their own domain, specific logo, colours, and customised content. It also helps schools manage admissions online, display academic information, share announcements, and engage parents and students — all through a professional, enterprise-standard, branded online presence.`
-        },
-        {
-            id: 6,
-            question: "Who can use School Lift K-12 Suite?",
-            answer:
-                `K-12 Suite facilitates the work efficiency of school principals, administrators, staff, teachers, and even parents. The K-12 suite by School Lift is capable of managing any institute, whether a small private school or a large institution; it scales to fit particular needs.`
-        },
-        {
-            id: 7,
-            question: "Is the K-12 Suite by School Lift cloud-based?",
-            answer: `Yes, K-12 Suite is fully automatic and a cloud-first platform. We can access school data securely from anywhere, anytime, and on any device.`
-        },
-        {
-            id: 8,
-            question: "Does the K-12 Suite by School Lift integrate with other systems?",
-            answer: `Yes, the K-12 Suite by School Lift can be seamlessly integrated with advanced ecosystems like accounting systems (Tally Prime), payment gateways, biometric devices, and more, to create a unified ecosystem.`
-        }
-    ];
-    return (
-        <section className="relative overflow-hidden bg-white mt-10">
-            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
-                <div className="flex flex-col items-center">
-                    <p className="text-[33px] font-bold leading-tight text-black">
-                        K-12 Suite FAQ
-                    </p>
-
-                    <div className="mt-4 h-[4px] w-[44px] rounded-full bg-[#4e6fb9]" />
-                </div>
-
-                <div className="relative mt-10">
-                    <div className="relative z-10 w-full">
-                        {faqItems.map((item, index) => (
-                            <FaqRow
-                                key={item.id}
-                                item={item}
-                                isOpen={openId === item.id}
-                                isLast={index === faqItems.length - 1}
-                                onToggle={() =>
-                                    setOpenId((prev) => (prev === item.id ? null : item.id))
-                                }
-                            />
-                        ))}
-                    </div>
-
-                    {/* Right bottom decorative image */}
-                    <div className="pointer-events-none absolute bottom-[-80px] right-[-60px] hidden xl:block z-0">
-                        <img
-                            src={homeLearningBg}
-                            alt=""
-                            className="h-[500px] w-auto"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-}
-
-function FaqRow({ item, isOpen, onToggle, isLast }) {
-    return (
-        <div className={`${!isLast ? "border-b border-[#e7e7e7]" : ""}`}>
-            <button
-                onClick={onToggle}
-                className="flex w-full items-center justify-between gap-6 py-[22px] text-left"
-            >
-                <span className="pr-4 text-[17px] font-semibold leading-[1.45] text-[#2f2f2f]">
-                    {item.question}
-                </span>
-
-                <span className="shrink-0 text-[#4e6fb9]">
-                    {isOpen ? (
-                        <ChevronUp className="h-[22px] w-[22px] stroke-[1.8]" />
-                    ) : (
-                        <ChevronDown className="h-[22px] w-[22px] stroke-[1.8]" />
-                    )}
-                </span>
-            </button>
-
-            <div
-                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] pb-4" : "grid-rows-[0fr]"
-                    }`}
-            >
-                <div className="overflow-hidden">
-                    <p className="pb-[10px] text-[16px] leading-[1.9] font-extralight text-[#666666] whitespace-pre-line">
-                        {item.answer}
-                    </p>
-                </div>
-            </div>
-        </div>
-    );
-}
 
 const SchoolLiftActionBanner = () => {
     return (

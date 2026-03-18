@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HeroSection from "../component/HeroSection";
 import CommonButton from "../component/CommonButton";
 import {
     Users,
@@ -51,7 +52,7 @@ import book from "../assets/parent-communication-icons/suited-school-echosystem2
 const ParentCommunicationPortal = () => {
     return (
         <div className="font-primary bg-white text-sbText">
-            <HeroSection />
+            <HeroSection imgSrc={heroImg} />
             <ParentCommunicationPortalSection />
             <UnifyingSimplifyingParentCommunication />
             <FreeDemo />
@@ -61,19 +62,6 @@ const ParentCommunicationPortal = () => {
             <StudentInformationSortedTheSchoolLiftWay />
             <FrequentlyAskedQuestions />
         </div>
-    );
-};
-
-
-const HeroSection = () => {
-    return (
-        <section className="relative w-full h-[600px] overflow-hidden">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${heroImg})` }}
-            />
-        </section>
     );
 };
 

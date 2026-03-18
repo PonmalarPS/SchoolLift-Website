@@ -1,4 +1,5 @@
 import React from "react";
+import HeroSection from "../component/HeroSection";
 import { useState } from "react";
 import CommonButton from "../component/CommonButton";
 import {
@@ -95,7 +96,7 @@ const accordionItems = [
 const Classroom = () => {
     return (
         <div className="font-primary bg-white text-sbText">
-            <HeroSection />
+            <HeroSection imgSrc={banner} />
             <ClassroomSolutions />
             <GetDemoButton />
             <EmpoweredTeachersSection />
@@ -106,18 +107,6 @@ const Classroom = () => {
             <TeacherEmpowermentAccordion />
             <FrequentlyAskedQuestions />
         </div>
-    );
-};
-
-const HeroSection = () => {
-    return (
-        <section className="relative w-full h-[550px] overflow-hidden">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${banner})` }}
-            />
-        </section>
     );
 };
 
