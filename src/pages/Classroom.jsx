@@ -148,19 +148,19 @@ const ClassroomSolutions = () => {
     ];
     return (
         <section className="bg-white py-10 px-6">
-            <div className="mx-auto max-w-[1520px] px-5 sm:px-8 lg:px-12">
+            <div className="mx-auto max-w-[1600px] px-5 sm:px-5 lg:px-8">
                 <div className="mx-auto max-w-[1320px] text-center">
-                    <h2 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
+                    <h2 className="font-heading font-bold text-[28px] md:text-[40px] leading-tight text-sbText mx-auto">
                         SkoolPlus Classroom Solutions
                     </h2>
 
                     <div className="mx-auto mt-5 h-[4px] w-[62px] rounded-full bg-sbBlue" />
 
-                    <p className="mt-7 font-primary text-[24px] font-semibold leading-[1.35] text-sbText">
+                    <p className="mt-7 font-primary text-[20px] md:text-[24px] font-semibold leading-[1.35] text-sbText">
                         The next-gen solution for enhanced learning and better engagement
                     </p>
 
-                    <p className="mx-auto mt-4 max-w-[1000px] font-extralight font-primary text-[18px] leading-[1.7] text-sbTextLight">
+                    <p className="mx-auto mt-4 max-w-[1000px] font-extralight font-primary text-[16px] md:text-[18px] leading-[1.7] text-sbTextLight">
                         SkoolPlus integrated classroom solution allows for class participation, truly active
                         learning and an entirely new level of student collaboration. Our solution comes not
                         only with high-resolution digital panels but also ready-to-use content aligned to the
@@ -223,29 +223,29 @@ const GetDemoButton = () => {
 
 const EmpoweredTeachersSection = () => {
     return (
-        <section className="bg-sbWhite py-15">
-            <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between gap-16">
+        <section className="bg-sbWhite py-10 md:py-15">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
 
                 {/* LEFT CONTENT */}
-                <div className="max-w-[500px]">
+                <div className="w-full lg:max-w-[620px] text-center lg:text-left">
 
-                    <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
-                        Empowered Teachers.<br />
-                        Engaged Students.<br />
+                    <h2 className="text-[28px] md:text-[32px] font-semibold text-sbText leading-tight md:leading-[40px]">
+                        Empowered Teachers.<br className="hidden md:block" />
+                        Engaged Students.<br className="hidden md:block" />
                         Better Learning.
                     </h2>
 
-                    <div className="w-14 h-[3px] bg-sbBlue mt-2 mb-5"></div>
+                    <div className="w-14 h-[3px] bg-sbBlue mt-2 mb-5 mx-auto lg:mx-0"></div>
 
-                    <p className="text-[18px] font-extralight text-sbTextLight leading-[34px] mb-4">
+                    <p className="text-[16px] md:text-[18px] font-extralight text-sbTextLight leading-relaxed md:leading-[34px] mb-4">
                         Transform any lesson into an engaging learning experience. From multimedia videos to collaborative exercises and on- the-fly assessments,SkoolPlus equips teachers with everything they need to deliver effective lessons every single day.
                     </p>
 
-                    <p className="text-[18px] font-extralight text-sbTextLight leading-[34px] mb-6">
+                    <p className="text-[16px] md:text-[18px] font-extralight text-sbTextLight leading-relaxed md:leading-[34px] mb-6">
                         Transform your classrooms into vibrant learning spaces that fuel tomorrow's dreams.
                     </p>
 
-                    <div className="flex gap-6">
+                    <div className="flex justify-center lg:justify-start gap-6">
                         <GetInTouch />
                     </div>
 
@@ -253,8 +253,18 @@ const EmpoweredTeachersSection = () => {
 
 
                 {/* RIGHT VIDEO CARD */}
-                <div className="w-[800px] rounded-3xl overflow-hidden shadow-sb bg-black">
-                    <iframe src="https://player.vimeo.com/video/1123084258?h=8372105d9e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=true&loop=1&muted=1" width="708.711" height="398.633" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Home-and-Classroom-Solutions" data-ready="true"></iframe>
+                <div className="w-full max-w-[700px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sb bg-black aspect-video">
+                    <iframe
+                        src="https://player.vimeo.com/video/1123084258?h=8372105d9e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=true&loop=1&muted=1"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        title="Home-and-Classroom-Solutions"
+                        data-ready="true"
+                        className="w-full h-full"
+                    ></iframe>
                 </div>
 
             </div>
@@ -300,16 +310,16 @@ const InteractiveBoard = () => {
     ];
     return (
         <section className="bg-white py-18">
-            <div className="mx-auto max-w-[1400px] px-4 lg:px-8">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* Heading */}
                 <div className="text-center">
-                    <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <h2 className="text-[28px] md:text-[32px] font-semibold text-sbText leading-tight md:leading-[40px]">
                         Interactive Board For Teaching
                     </h2>
 
                     <div className="mx-auto mt-4 h-[4px] w-[70px] rounded bg-sbBlue"></div>
 
-                    <p className="mt-6 text-[18px] font-extralight text-sbTextLight leading-[34px] mb-6">
+                    <p className="mt-6 text-[16px] md:text-[18px] font-extralight text-sbTextLight leading-relaxed md:leading-[34px] mb-6">
                         Intuitive, versatile and multi-function digital panels that
                         eliminate the need for multiple equipment
                     </p>
@@ -381,41 +391,41 @@ const InteractiveBoardsForClassrooms = () => {
         },
     ];
     return (
-        <section className="w-full bg-white">
-            <div className="mx-auto max-w-[1700px] px-4 lg:px-10">
-                <div className="grid items-center gap-16 lg:grid-cols-2">
+        <section className="w-full bg-white py-10 md:py-16">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
+                <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
 
                     {/* Left Image */}
-                    <div className="flex justify-center">
+                    <div className="flex justify-center order-2 lg:order-1">
                         <img
                             src={androidPanel}
                             alt="Interactive board"
-                            className="w-full max-w-[820px] h-auto"
+                            className="w-full max-w-[820px] h-auto rounded-none"
                         />
                     </div>
 
                     {/* Right Content */}
-                    <div>
-                        <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <div className="order-1 lg:order-2 text-center lg:text-left">
+                        <h2 className="text-[28px] md:text-[32px] font-semibold text-sbText leading-tight md:leading-[40px]">
                             Interactive Boards for Classrooms
                         </h2>
 
-                        <div className="mt-4 h-[5px] w-[70px] rounded bg-sbPurple"></div>
+                        <div className="mt-4 h-[5px] w-[70px] rounded bg-sbPurple mx-auto lg:mx-0"></div>
 
-                        <p className="mt-6 text-[18px] font-extralight text-sbTextLight leading-[34px]">
+                        <p className="mt-6 text-[16px] md:text-[18px] font-extralight text-sbTextLight leading-relaxed md:leading-[34px]">
                             Choose from 3 models engineered to suit your learning
                             environment and budget.
                         </p>
 
-                        <div className="mt-4 space-y-5">
+                        <div className="mt-8 space-y-6">
                             {panelSizes.map((item, index) => (
-                                <div key={index} className="flex items-start gap-4">
+                                <div key={index} className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
 
                                     {/* Icon Box */}
                                     <img
                                         src={item.icon}
                                         alt={item.title}
-                                        className="h-[70px] w-[70px]"
+                                        className="h-16 w-16 md:h-[70px] md:w-[70px]"
                                     />
 
                                     {/* Text */}
@@ -424,7 +434,7 @@ const InteractiveBoardsForClassrooms = () => {
                                             {item.title}
                                         </p>
 
-                                        <p className="mt-2 font-primary text-[17px] text-sbTextLight font-extralight">
+                                        <p className="mt-2 font-primary text-[15px] md:text-[17px] text-sbTextLight font-extralight">
                                             {item.description}
                                         </p>
                                     </div>
@@ -476,16 +486,16 @@ const ContentRepository = () => {
 
     return (
         <section className="bg-white pt-16 pb-10">
-            <div className="mx-auto max-w-[1520px] px-5 sm:px-8 lg:px-12">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* Heading */}
                 <div className="text-center">
-                    <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <h2 className="text-[28px] md:text-[32px] font-semibold text-sbText leading-tight md:leading-[40px]">
                         Content Repository
                     </h2>
 
                     <div className="mx-auto mt-4 h-[4px] w-[48px] rounded-full bg-sbBlue" />
 
-                    <p className="mt-6 text-[18px] font-extralight text-sbTextLight leading-[34px] mb-6">
+                    <p className="mt-6 text-[16px] md:text-[18px] font-extralight text-sbTextLight leading-relaxed md:leading-[34px] mb-6">
                         Syllabus-aligned content created, reviewed and updated by a highly
                         qualified panel of principals and teachers.
                     </p>
@@ -499,11 +509,11 @@ const ContentRepository = () => {
                             className="group flex min-h-[280px] flex-col items-center rounded-[18px] border border-gray-200 bg-sbWhite px-5 py-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-sbHover"
                         >
                             {/* Image */}
-                            <div className="flex h-[120px] items-center justify-center">
+                            <div className="flex h-[170px] items-center justify-center px-4">
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="max-h-[115px] w-auto max-w-[140px] object-contain transition-transform duration-300 group-hover:scale-105"
+                                    className="max-h-[140px] w-auto max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                                 />
                             </div>
 
@@ -575,65 +585,67 @@ const WhySkoolPlus = () => {
                 <div className="h-full w-full bg-[radial-gradient(circle_at_20px_20px,#d78adf_1.2px,transparent_1.2px)] bg-[length:38px_38px]" />
             </div>
 
-            <div className="relative mx-auto max-w-[1520px] px-4 sm:px-6 lg:px-8">
+            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* heading */}
                 <div className="mb-8 flex flex-col items-center">
-                    <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <h2 className="text-[28px] md:text-[32px] font-semibold text-sbText leading-tight md:leading-[40px]">
                         WhySkoolPlus
                     </h2>
                     <div className="mt-4 h-[4px] w-[52px] rounded-full bg-sbPurple" />
                 </div>
 
-                {/* table */}
-                <div className="overflow-hidden rounded-[24px] bg-sbWhite shadow-[0_20px_50px_rgba(170,46,177,0.10)]">
-                    {/* header */}
-                    <div className="grid grid-cols-[1.05fr_1.05fr_1fr]">
-                        <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
-                            Feature
+                {/* table wrapper for horizontal scroll on mobile */}
+                <div className="overflow-x-auto pb-4">
+                    <div className="min-w-[800px] overflow-hidden rounded-[24px] bg-sbWhite shadow-[0_20px_50px_rgba(170,46,177,0.10)]">
+                        {/* header */}
+                        <div className="grid grid-cols-[1.05fr_1.05fr_1fr]">
+                            <div className="border-r border-gray-200 bg-white px-10 py-10 font-primary text-[14px] md:text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
+                                Feature
+                            </div>
+                            <div className="border-r border-gray-200 bg-white px-10 py-10 font-primary text-center text-[14px] md:text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
+                                Other Smart Boards
+                            </div>
+                            <div className="bg-sbPurple px-10 py-10 font-primary text-center text-[14px] md:text-[15px] font-bold uppercase tracking-[0.02em] text-white">
+                                SkoolPlus Classroom Solution
+                            </div>
                         </div>
-                        <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
-                            Other Smart Boards
-                        </div>
-                        <div className="bg-sbPurple px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-white">
-                            SkoolPlus Classroom Solution
-                        </div>
+
+                        {/* rows */}
+                        {comparisonRows.map((row) => (
+                            <div
+                                key={row.feature}
+                                className="grid grid-cols-[1.05fr_1.05fr_1fr]"
+                            >
+                                <div className="flex items-center border-t border-r border-gray-200 bg-white px-10 py-8">
+                                    <p className="font-primary text-[15px] md:text-[16px] font-semibold text-sbText">
+                                        {row.feature}
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 border-t border-r border-gray-200 bg-white px-10 py-6">
+                                    <img
+                                        src={row.otherIcon}
+                                        alt=""
+                                        className="h-8 w-8 md:h-[40px] md:w-[40px] object-contain shrink-0"
+                                    />
+                                    <p className="font-primary text-[14px] md:text-[16px] leading-[1.5] text-[#555555] font-extralight">
+                                        {row.otherText}
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 border-t border-white/20 bg-[#a61fb1] px-7 py-6 md:px-8">
+                                    <img
+                                        src={row.plusIcon}
+                                        alt=""
+                                        className="h-8 w-8 md:h-[40px] md:w-[40px] object-contain shrink-0"
+                                    />
+                                    <p className="font-primary text-[14px] md:text-[16px] leading-[1.5] font-extralight text-white/95">
+                                        {row.plusText}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-
-                    {/* rows */}
-                    {comparisonRows.map((row) => (
-                        <div
-                            key={row.feature}
-                            className="grid grid-cols-[1.05fr_1.05fr_1fr]"
-                        >
-                            <div className="flex items-center border-t border-r border-gray-200 bg-white px-10 py-10">
-                                <p className="font-primary text-[16px] font-semibold text-sbText">
-                                    {row.feature}
-                                </p>
-                            </div>
-
-                            <div className="flex items-center gap-4 border-t border-r border-gray-200 bg-white px-10 py-8">
-                                <img
-                                    src={row.otherIcon}
-                                    alt=""
-                                    className="h-[40px] w-[40px] object-contain shrink-0"
-                                />
-                                <p className="font-primary text-[16px] leading-[1.5] text-[#555555] md:text-[16px] font-extralight">
-                                    {row.otherText}
-                                </p>
-                            </div>
-
-                            <div className="flex items-center gap-4 border-t border-white/20 bg-[#a61fb1] px-7 py-8 md:px-8">
-                                <img
-                                    src={row.plusIcon}
-                                    alt=""
-                                    className="h-[40px] w-[40px] object-contain shrink-0"
-                                />
-                                <p className="font-primary text-[16px] leading-[1.5] font-extralight text-white/95 md:text-[16px]">
-                                    {row.plusText}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
                 </div>
             </div>
         </section>
@@ -644,18 +656,18 @@ const TeacherEmpowermentAccordion = () => {
     const [openId, setOpenId] = useState(1);
 
     return (
-        <section className="w-full bg-sbBgLight pb-8 lg:py-12">
-            <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10 xl:px-14">
-                <div className="grid items-center gap-8 lg:grid-cols-[1.02fr_1fr] lg:gap-10">
+        <section className="w-full bg-sbBgLight py-10 lg:py-12">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
+                <div className="grid items-center gap-10 lg:grid-cols-[1.02fr_1fr] lg:gap-14">
                     {/* Left Content */}
-                    <div className="pt-2">
-                        <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <div className="pt-2 text-center lg:text-left">
+                        <h2 className="text-[28px] md:text-[32px] font-semibold text-sbText leading-tight md:leading-[40px]">
                             Empowering The Teacher At Every Step In The Classroom
                         </h2>
 
-                        <div className="mt-4 h-[6px] w-[86px] rounded-full bg-sbBlue" />
+                        <div className="mt-4 h-[6px] w-[86px] rounded-full bg-sbBlue mx-auto lg:mx-0" />
 
-                        <div className="mt-3">
+                        <div className="mt-8 text-left">
                             {accordionItems.map((item) => (
                                 <AccordionItem
                                     key={item.id}
@@ -668,11 +680,11 @@ const TeacherEmpowermentAccordion = () => {
                     </div>
 
                     {/* Right Image */}
-                    <div className="flex items-center justify-center lg:justify-end">
+                    <div className="flex items-center justify-center lg:justify-end mt-4 lg:mt-0">
                         <img
                             src={accordionItems.find((item) => item.id === openId)?.gif || gif2}
                             alt="Teacher empowerment screen"
-                            className="h-[400px] w-full max-w-[820px] object-contain border-[22px] border-black shadow-sb"
+                            className="h-auto max-h-[400px] w-full max-w-[820px] object-contain border-[10px] md:border-[22px] border-black shadow-sb"
                         />
                     </div>
                 </div>

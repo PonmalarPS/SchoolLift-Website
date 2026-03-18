@@ -35,8 +35,6 @@ import icon10 from "../assets/home-icons/10.png";
 import icon11 from "../assets/home-icons/11.png";
 import icon12 from "../assets/home-icons/12.png";
 import icon13 from "../assets/home-icons/13.png";
-import icon14 from "../assets/home-icons/1.png";
-import icon15 from "../assets/home-icons/1.png";
 
 import schoolIcon from "../assets/home-icons/school.svg";
 import studentIcon from "../assets/home-icons/student.svg";
@@ -167,11 +165,11 @@ const HeaderSection = () => {
                 <img src={icon9} className="absolute bottom-10 right-[15%] w-124 opacity-40" />
                 <img src={icon10} className="absolute top-[30%] left-[10%] w-21 opacity-40" />
                 <img src={icon11} className="absolute bottom-[45%] left-[25%] w-24 opacity-40" />
-                <img src={icon12} className="absolute top-[60%] left-[60%] w-22 opacity-40" />
-                <img src={icon13} className="absolute top-[20%] right-[55%] w-24 opacity-40" />
+                <img src={icon12} className="absolute top-[8%] left-[50%] w-28 opacity-40" />
+                <img src={icon13} className="absolute top-[43%] right-[50%] w-20 opacity-40" />
             </div>
 
-            <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16 md:py-24 flex flex-col lg:flex-row items-center justify-between relative z-10 gap-12 lg:gap-0">
+            <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-8 md:py-15 flex flex-col lg:flex-row items-center justify-between relative z-10 gap-12 lg:gap-0">
 
                 {/* Left Content */}
                 <div className="max-w-xl text-center lg:text-start flex flex-col items-center lg:items-start">
@@ -193,7 +191,7 @@ const HeaderSection = () => {
 
 
                 {/* Inner White Circle */}
-                <div className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden shrink-0">
+                <div className="w-[300px] h-[500px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden shrink-0">
                     <img
                         src={heroImg}
                         alt="Student"
@@ -443,121 +441,6 @@ const TechnologyEveryoneSection = () => {
         </section>
     );
 };
-
-// const TechnologyAudienceSection = () => {
-//     return (
-//         <section className="bg-sbWhite pt-0 pb-10 rounded-b-3xl">
-//             {/* TOP IMAGES */}
-//             <div className="grid grid-cols-4">
-//                 <img
-//                     src=
-//                     {schoolsIcon}
-//                     className="w-full h-[260px] object-cover"
-//                 />
-//                 <img
-//                     src={teachersIcon}
-//                     className="w-full h-[260px] object-cover"
-//                 />
-//                 <img
-//                     src={studentsIcon}
-//                     className="w-full h-[260px] object-cover"
-//                 />
-//                 <img
-//                     src={parentsIcon}
-//                     className="w-full h-[260px] object-cover"
-//                 />
-//             </div>
-
-//             {/* CONTENT */}
-//             <div className="max-w-[1400px] mx-auto px-16 mt-16 grid grid-cols-4 gap-16">
-
-//                 {/* COLUMN ITEM */}
-//                 {[
-//                     {
-//                         title: "Schools",
-//                         points: [
-//                             "Simplify school administration",
-//                             "Optimize fee collection",
-//                             "Boost parent engagement",
-//                             "Transform classroom learning",
-//                             "Enhance student performance",
-//                             "Achieve NEP Compliance",
-//                         ],
-//                     },
-//                     {
-//                         title: "Teachers",
-//                         points: [
-//                             "Interactive panels & Classroom solutions",
-//                             "Multi-media teaching materials",
-//                             "Syllabus-aligned content",
-//                             "Online assessments",
-//                             "Comprehensive question bank",
-//                             "Easy report card generation",
-//                             "Automate attendance",
-//                         ],
-//                     },
-//                     {
-//                         title: "Students",
-//                         points: [
-//                             "Anywhere, anytime access",
-//                             "Online Diary to stay on track",
-//                             "Learn at your own pace",
-//                             "Fun gamified learning",
-//                             "Extensive multimedia library",
-//                             "Personalized learning path",
-//                         ],
-//                     },
-//                     {
-//                         title: "Parents",
-//                         points: [
-//                             "Easy communication",
-//                             "Track child's performance",
-//                             "Identify improvement areas",
-//                             "Learning materials to reduce private tuition",
-//                             "Loan options & alerts for fees",
-//                             "Know location of school bus",
-//                         ],
-//                     },
-//                 ].map((item, index) => (
-//                     <div key={index} className="relative">
-
-//                         {/* Decorative Left Shape */}
-//                         <div className="absolute -left-10 top-0 w-14 h-14 overflow-hidden">
-//                             <div className="w-14 h-14 rounded-full 
-//                   bg-sbBlue 
-//                   opacity-90
-//                   translate-x-[-55%]">
-//                             </div>
-//                         </div>
-
-//                         {/* Title */}
-//                         <h3 className="text-[24px] font-semibold text-sbText mb-6">
-//                             {item.title}
-//                         </h3>
-
-//                         {/* Points */}
-//                         <ul className="space-y-4">
-//                             {item.points.map((point, i) => (
-//                                 <li key={i} className="flex items-start gap-3">
-
-//                                     {/* Check Icon */}
-//                                     <CircleCheckIcon />
-
-//                                     <span className="text-[18px] leading-[25px] text-sbTextLight font-extralight">
-//                                         {point}
-//                                     </span>
-
-//                                 </li>
-//                             ))}
-//                         </ul>
-
-//                     </div>
-//                 ))}
-
-//             </div>
-//         </section>
-//     );
-// };
 
 const TechnologyAudienceSection = () => {
     const data = [
