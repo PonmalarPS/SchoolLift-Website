@@ -127,7 +127,7 @@ const StudentInfoSection = () => {
             </div>
 
             <div className="mx-auto max-w-[1400px] text-center">
-                <h1 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
+                <h1 className="font-heading font-bold text-[32px] md:text-[40px] leading-tight text-sbText mx-auto">
                     Student Information System
                 </h1>
 
@@ -186,12 +186,12 @@ const StudentInfoCardsSection = () => {
     ];
 
     return (
-        <section className="mt-7 w-full bg-white px-4 py-10 sm:px-6 lg:px-8 xl:px-10">
-            <div className="mx-auto grid max-w-[2048px] grid-cols-1 gap-6 xl:grid-cols-3 xl:gap-8">
+        <section className="mt-7 w-full bg-white px-4 py-10 sm:px-6 lg:px-10 xl:px-14">
+            <div className="mx-auto grid max-w-[1600px] grid-cols-1 md:grid-cols-2 gap-6 xl:grid-cols-3 xl:gap-8">
                 {cards.map((card, index) => (
                     <article
                         key={index}
-                        className="rounded-[22px] bg-[#f6f6f6] px-6 py-4 shadow-none sm:px-8 lg:px-10 xl:px-[40px] xl:py-[20px]"
+                        className="rounded-[22px] bg-[#f6f6f6] px-6 py-10 shadow-none sm:px-8 lg:px-10 xl:px-[40px] xl:py-[20px]"
                     >
                         <p className="mx-auto font-primary text-[21px] font-semibold text-black leading-8">
                             {card.title}
@@ -295,7 +295,7 @@ function FoundationOfSchoolSection() {
     ];
 
     return (
-        <section className="mt-5 relative overflow-hidden bg-white px-6 py-10 md:px-10 lg:px-16 xl:px-20">
+        <section className="mt-5 relative overflow-hidden bg-white py-10">
             {/* Background doodle */}
             <div className="pointer-events-none absolute left-[14%] top-[105px] hidden opacity-20 md:block">
                 <svg
@@ -318,7 +318,7 @@ function FoundationOfSchoolSection() {
                 </svg>
             </div>
 
-            <div className="mx-auto max-w-[1500px]">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* Top heading */}
                 <div className="mx-auto max-w-[1000px] text-center">
                     <div className="relative z-10 mx-auto max-w-[770px] text-center">
@@ -398,10 +398,10 @@ function StudentInformationSection() {
     ];
 
     return (
-        <section className="relative overflow-hidden bg-white px-4 py-10 sm:px-6 lg:px-10 xl:px-12">
+        <section className="relative overflow-hidden bg-white py-10">
             <div className="pointer-events-none absolute -left-24 top-[360px] h-[520px] w-[260px] rounded-r-full bg-[#efe8f6] opacity-30" />
 
-            <div className="mx-auto max-w-[1250px]">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 <div className="mx-auto max-w-[1000px] text-center">
 
                     <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
@@ -466,17 +466,15 @@ function StudentInformationSection() {
 const OurClients = () => {
     return (
         <section className="mt-20 w-full bg-sbBgLight py-[40px]">
-            <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 <div className="mb-15 flex flex-col items-center">
-                    {/* Heading */}
                     <h2 className="text-[32px] font-semibold text-sbText">
                         What Our Clients Say
                     </h2>
-                    {/* Divider */}
                     <div className="w-[70px] h-[4px] bg-sbBlue mx-auto mt-4 mb-0 rounded-full" />
                 </div>
 
-                <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-14">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-14">
                     {testimonials.map((item) => (
                         <TestimonialCard key={item.id} item={item} />
                     ))}

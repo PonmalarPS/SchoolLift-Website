@@ -115,20 +115,20 @@ const HomeLearningSolutionsSection = () => {
                 </svg>
             </div>
 
-            <div className="mx-auto max-w-[1700px] text-center">
+            <div className="mx-auto max-w-[1300px] text-center">
                 <h1 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
                     Home Learning Solutions
                 </h1>
 
                 <div className="mx-auto mt-4 h-[4px] w-[82px] rounded-full bg-sbBlue" />
 
-                <p className="mx-auto mt-10 text-[22px] max-w-[1400px] font-primary font-semibold text-lg leading-8 text-black">
+                <p className="mx-auto mt-10 text-[22px] max-w-[1100px] font-primary font-semibold text-lg leading-8 text-black">
                     Augment in-school learning experiences, cater to individual learner
                     needs and drive better parent involvement with our online learning
                     platform.
                 </p>
 
-                <p className="mx-auto mt-2 max-w-[1500px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
+                <p className="mx-auto mt-2 max-w-[1100px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
                     Empower and inspire your students with the ability to augment their
                     learning at school with anywhere, anytime access to the same
                     high-quality learning resources used in the classroom. Increase
@@ -136,14 +136,14 @@ const HomeLearningSolutionsSection = () => {
                     school-related information.
                 </p>
 
-                <p className="mx-auto mt-8 max-w-[1500px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
+                <p className="mx-auto mt-8 max-w-[1100px] font-primary font-extralight text-lg leading-8 text-sbTextLight">
                     Involving parents in school activities as well as in supporting
                     learning at home not only enhances student interest and motivation
                     but also can greatly help the overall development of the child&apos;s
                     personality.
                 </p>
 
-                <p className="mx-auto mt-8 max-w-[1400px] text-[19px] font-bold leading-[1.4] text-black">
+                <p className="mx-auto mt-8 max-w-[1100px] text-[19px] font-bold leading-[1.4] text-black">
                     Greater Involvement. Better Outcomes. Exceptional Experience.
                 </p>
             </div>
@@ -204,7 +204,7 @@ const LearningResources = () => {
     return (
         <section className="bg-white py-10">
             <div className="mx-auto max-w-full">
-                <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-4 lg:gap-0">
+                <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-0">
                     {solutions.map((item) => (
                         <div key={item.id} className="flex flex-col">
                             <div className={`h-[240px] sm:h-[240px] ${item.imageBg}`}>
@@ -466,7 +466,7 @@ function OnlineLearningSection() {
     ];
 
     return (
-        <section className="relative overflow-hidden bg-white px-6 py-10 md:px-10 lg:px-16 xl:px-20">
+        <section className="relative overflow-hidden bg-white py-10">
             {/* Background doodle */}
             <div className="pointer-events-none absolute left-[14%] top-[105px] hidden opacity-20 md:block">
                 <svg
@@ -489,7 +489,7 @@ function OnlineLearningSection() {
                 </svg>
             </div>
 
-            <div className="mx-auto max-w-[1500px]">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* Top heading */}
                 <div className="mx-auto max-w-[1000px] text-center">
                     <p className="text-[18px] font-primary font-semibold text-lg leading-8 text-black">
@@ -539,23 +539,24 @@ function OnlineLearningSection() {
 const LearningPlatformSection = () => {
     return (
         <section className="bg-sbWhite py-15">
-            <div className="max-w-[1400px] mx-auto px-10 flex items-center justify-between gap-16">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14 flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-4">
 
                 {/* LEFT CONTENT */}
-                <div className="max-w-[600px]">
+                <div className="w-full lg:max-w-[700px] text-center lg:text-left">
 
-                    <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <h2 className="text-[32px] font-semibold text-sbText leading-tight md:leading-[40px]">
                         All-in-One Online
+                        <br className="hidden md:block" />
                         Learning Platform & App
                     </h2>
 
-                    <div className="w-14 h-[3px] bg-sbBlue mt-2 mb-5"></div>
+                    <div className="w-14 h-[3px] bg-sbBlue mt-2 mb-5 mx-auto lg:mx-0"></div>
 
-                    <p className="text-[18px] font-semibold text-sbText leading-[34px] mb-6">
+                    <p className="text-[18px] font-semibold text-sbText leading-relaxed mb-6">
                         Better Involvement with Online learning platform
                     </p>
 
-                    <div className="space-y-4 mb-8">
+                    <div className="space-y-4 mb-8 text-left max-w-[500px] mx-auto lg:mx-0">
                         {[
                             "Stay updated on homework, report cards, events & holidays",
                             "Make fee payments online",
@@ -567,8 +568,8 @@ const LearningPlatformSection = () => {
                             "Update details",
                             "Get the latest learning & and assessment tools",
                         ].map((item, idx) => (
-                            <div key={idx} className="flex items-center gap-4">
-                                <div className="w-2 h-2 rounded-full bg-black mt-1 shrink-0" />
+                            <div key={idx} className="flex items-start gap-4">
+                                <div className="w-2 h-2 rounded-full bg-black mt-2 shrink-0" />
                                 <p className="text-[18px] font-extralight text-sbTextLight leading-tight">
                                     {item}
                                 </p>
@@ -577,10 +578,19 @@ const LearningPlatformSection = () => {
                     </div>
                 </div>
 
-
                 {/* RIGHT VIDEO CARD */}
-                <div className="w-[720px] rounded-3xl overflow-hidden shadow-sb bg-black">
-                    <iframe src="https://player.vimeo.com/video/1123084288?h=72c1b6fcba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=true&loop=1&muted=1" width="708.711" height="398.633" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Home-and-Classroom-Solutions" data-ready="true"></iframe>
+                <div className="w-full max-w-[700px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sb bg-black aspect-video">
+                    <iframe
+                        src="https://player.vimeo.com/video/1123084288?h=72c1b6fcba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=true&loop=1&muted=1"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        title="Home-and-Classroom-Solutions"
+                        data-ready="true"
+                        className="w-full h-full"
+                    ></iframe>
                 </div>
 
             </div>
@@ -644,7 +654,7 @@ const WhySkoolPlusLearning = () => {
                 <div className="h-full w-full bg-[radial-gradient(circle_at_20px_20px,#d78adf_1.2px,transparent_1.2px)] bg-[length:38px_38px]" />
             </div>
 
-            <div className="relative mx-auto max-w-[1520px] px-4 sm:px-6 lg:px-8">
+            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* heading */}
                 <div className="mb-8 flex flex-col items-center">
                     <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
@@ -653,56 +663,58 @@ const WhySkoolPlusLearning = () => {
                     <div className="mt-4 h-[4px] w-[52px] rounded-full bg-sbPurple" />
                 </div>
 
-                {/* table */}
-                <div className="overflow-hidden rounded-[24px] bg-sbWhite shadow-[0_20px_50px_rgba(170,46,177,0.10)]">
-                    {/* header */}
-                    <div className="grid grid-cols-[1.05fr_1.05fr_1fr]">
-                        <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
-                            Feature
+                {/* table wrapper for horizontal scroll */}
+                <div className="overflow-x-auto pb-4 custom-scrollbar">
+                    <div className="min-w-[800px] overflow-hidden rounded-[24px] bg-sbWhite shadow-[0_20px_50px_rgba(170,46,177,0.10)]">
+                        {/* header */}
+                        <div className="grid grid-cols-[1.05fr_1.05fr_1fr]">
+                            <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
+                                Feature
+                            </div>
+                            <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
+                                OTHER HOME LEARNING SOLUTIONS
+                            </div>
+                            <div className="bg-sbPurple px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-white">
+                                SCHOOL LIFT E-LEARN
+                            </div>
                         </div>
-                        <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
-                            OTHER HOME LEARNING SOLUTIONS
-                        </div>
-                        <div className="bg-sbPurple px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-white">
-                            SCHOOL LIFT E-LEARN
-                        </div>
+
+                        {/* rows */}
+                        {comparisonRows.map((row) => (
+                            <div
+                                key={row.feature}
+                                className="grid grid-cols-[1.05fr_1.05fr_1fr]"
+                            >
+                                <div className="flex items-center border-t border-r border-gray-200 bg-white px-10 py-10">
+                                    <p className="font-primary text-[16px] font-semibold text-sbText">
+                                        {row.feature}
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 border-t border-r border-gray-200 bg-white px-10 py-8">
+                                    <img
+                                        src={row.otherIcon}
+                                        alt=""
+                                        className="h-[40px] w-[40px] object-contain shrink-0"
+                                    />
+                                    <p className="font-primary text-[16px] leading-[1.5] text-[#555555] md:text-[16px] font-extralight">
+                                        {row.otherText}
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 border-t border-white/20 bg-[#a61fb1] px-7 py-8 md:px-8">
+                                    <img
+                                        src={row.plusIcon}
+                                        alt=""
+                                        className="h-[40px] w-[40px] object-contain shrink-0"
+                                    />
+                                    <p className="font-primary text-[16px] leading-[1.5] font-extralight text-white/95 md:text-[16px]">
+                                        {row.plusText}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-
-                    {/* rows */}
-                    {comparisonRows.map((row) => (
-                        <div
-                            key={row.feature}
-                            className="grid grid-cols-[1.05fr_1.05fr_1fr]"
-                        >
-                            <div className="flex items-center border-t border-r border-gray-200 bg-white px-10 py-10">
-                                <p className="font-primary text-[16px] font-semibold text-sbText">
-                                    {row.feature}
-                                </p>
-                            </div>
-
-                            <div className="flex items-center gap-4 border-t border-r border-gray-200 bg-white px-10 py-8">
-                                <img
-                                    src={row.otherIcon}
-                                    alt=""
-                                    className="h-[40px] w-[40px] object-contain shrink-0"
-                                />
-                                <p className="font-primary text-[16px] leading-[1.5] text-[#555555] md:text-[16px] font-extralight">
-                                    {row.otherText}
-                                </p>
-                            </div>
-
-                            <div className="flex items-center gap-4 border-t border-white/20 bg-[#a61fb1] px-7 py-8 md:px-8">
-                                <img
-                                    src={row.plusIcon}
-                                    alt=""
-                                    className="h-[40px] w-[40px] object-contain shrink-0"
-                                />
-                                <p className="font-primary text-[16px] leading-[1.5] font-extralight text-white/95 md:text-[16px]">
-                                    {row.plusText}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
                 </div>
             </div>
         </section>
