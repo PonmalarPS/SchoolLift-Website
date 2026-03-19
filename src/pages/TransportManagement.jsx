@@ -48,9 +48,9 @@ const TransportManagement = () => {
 
 const SchoolBusManagementSection = () => {
     return (
-        <section className="relative overflow-hidden bg-white px-6 pt-15 md:px-10 lg:px-16">
-            <div className="mx-auto max-w-[1400px] text-center">
-                <h1 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
+        <section className="relative overflow-hidden bg-white pt-15">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14 text-center">
+                <h1 className="font-heading font-bold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-sbText mx-auto">
                     School Bus Management
                 </h1>
 
@@ -159,7 +159,7 @@ function SchoolBusTrackingSystem() {
     ];
 
     return (
-        <section className="mt-10 relative overflow-hidden bg-[#fbf8fc] px-4 py-6 sm:px-6 lg:px-8">
+        <section className="mt-10 relative overflow-hidden bg-[#fbf8fc] py-6">
             {/* doodle background */}
             <div
                 className="absolute inset-0 opacity-[0.2]"
@@ -171,10 +171,10 @@ function SchoolBusTrackingSystem() {
                 }}
             />
 
-            <div className="relative mx-auto max-w-[1300px]">
+            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* heading */}
                 <div className="text-center">
-                    <h2 className="mt-5 font-heading text-[32px] font-semibold leading-[1.15] text-[#a631ae] sm:text-[30px]">
+                    <h2 className="mt-5 font-heading text-[22px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold leading-[1.15] text-[#a631ae]">
                         School Lift School Bus Tracking System
                     </h2>
                     <div className="mx-auto mt-2 h-[3px] w-[28px] bg-[#b63dbd]" />
@@ -188,7 +188,7 @@ function SchoolBusTrackingSystem() {
                                 key={index}
                                 className={`text-center ${index === 0 ? "md:pr-8" : "md:pl-8"} py-3 md:py-0`}
                             >
-                                <p className="text-[26px] font-semibold leading-[1.35] text-black">
+                                <p className="text-[20px] sm:text-[22px] lg:text-[26px] font-semibold leading-[1.35] text-black">
                                     {plan.title}
                                 </p>
                                 <p className="mt-3 text-[16px] leading-[1.55] text-sbTextLight font-extralight">
@@ -200,66 +200,68 @@ function SchoolBusTrackingSystem() {
                 </div>
 
                 {/* comparison table */}
-                <div className="mt-10 overflow-hidden rounded-[18px] bg-white shadow-[0_20px_60px_rgba(201,103,216,0.20)]">
-                    {/* header row */}
-                    <div className="grid grid-cols-[300px_1fr_210px_180px]">
-                        <div className="bg-[#b240b8] px-8 py-8">
-                            <p className="text-[16px] font-semibold uppercase leading-[1.35] text-white">
-                                Feature
-                            </p>
+                <div className="mt-10 overflow-x-auto rounded-[18px] bg-white shadow-[0_20px_60px_rgba(201,103,216,0.20)]">
+                    <div className="min-w-[640px]">
+                        {/* header row */}
+                        <div className="grid grid-cols-[180px_1fr_150px_130px] lg:grid-cols-[300px_1fr_210px_180px]">
+                            <div className="bg-[#b240b8] px-8 py-8">
+                                <p className="text-[16px] font-semibold uppercase leading-[1.35] text-white">
+                                    Feature
+                                </p>
+                            </div>
+                            <div className="bg-white px-5 py-8">
+                                <p className="text-[16px] font-semibold uppercase leading-[1.35] text-black">
+                                    Function
+                                </p>
+                            </div>
+                            <div className="bg-white px-5 py-8 text-center">
+                                <p className="text-[16px] font-semibold uppercase leading-[1.35] text-black">
+                                    SkoolFleet Advanced
+                                </p>
+                            </div>
+                            <div className="bg-white px-5 py-8 text-center">
+                                <p className="text-[16px] font-semibold uppercase leading-[1.35] text-black">
+                                    SkoolFleet Lite
+                                </p>
+                            </div>
                         </div>
-                        <div className="bg-white px-5 py-8">
-                            <p className="text-[16px] font-semibold uppercase leading-[1.35] text-black">
-                                Function
-                            </p>
-                        </div>
-                        <div className="bg-white px-5 py-8 text-center">
-                            <p className="text-[16px] font-semibold uppercase leading-[1.35] text-black">
-                                SkoolFleet Advanced
-                            </p>
-                        </div>
-                        <div className="bg-white px-5 py-8 text-center">
-                            <p className="text-[16px] font-semibold uppercase leading-[1.35] text-black">
-                                SkoolFleet Lite
-                            </p>
-                        </div>
+
+                        {/* body */}
+                        {rows.map((row, index) => (
+                            <div
+                                key={index}
+                                className="grid grid-cols-[180px_1fr_150px_130px] lg:grid-cols-[300px_1fr_210px_180px]"
+                            >
+                                <div className="border-t border-white/20 bg-[#a41cab] px-8 py-9">
+                                    <p className="text-[16px] font-extralight leading-[1.4] text-white">
+                                        {row.feature}
+                                    </p>
+                                </div>
+
+                                <div className="border-t border-[#e7e7e7] bg-[#fbfbfb] px-5 py-8">
+                                    <p className="text-[16px] leading-[1.55] text-[#4e4e4e] font-extralight">
+                                        {row.function}
+                                    </p>
+                                </div>
+
+                                <div className="flex border-t border-[#e7e7e7] items-center justify-center bg-[#fbfbfb] px-5 py-8">
+                                    {row.advanced ? (
+                                        <img src={check} alt="Included" className="w-[30px] h-[30px] object-contain" />
+                                    ) : (
+                                        <img src={crossed} alt="Not Included" className="w-[30px] h-[30px] object-contain" />
+                                    )}
+                                </div>
+
+                                <div className="flex border-t border-[#e7e7e7] items-center justify-center bg-[#fbfbfb] px-5 py-8">
+                                    {row.lite ? (
+                                        <img src={check} alt="Included" className="w-[30px] h-[30px] object-contain" />
+                                    ) : (
+                                        <img src={crossed} alt="Not Included" className="w-[30px] h-[30px] object-contain" />
+                                    )}
+                                </div>
+                            </div>
+                        ))}
                     </div>
-
-                    {/* body */}
-                    {rows.map((row, index) => (
-                        <div
-                            key={index}
-                            className="grid grid-cols-[300px_1fr_210px_180px]"
-                        >
-                            <div className="border-t border-white/10 bg-[#a41cab] px-8 py-9">
-                                <p className="text-[16px] font-extralight leading-[1.4] text-white">
-                                    {row.feature}
-                                </p>
-                            </div>
-
-                            <div className="border-t border-[#f8f8f8] bg-[#fbfbfb] px-5 py-8">
-                                <p className="text-[16px] leading-[1.55] text-[#4e4e4e] font-extralight">
-                                    {row.function}
-                                </p>
-                            </div>
-
-                            <div className="flex border-t border-[#f8f8f8] items-center justify-center bg-[#fbfbfb] px-5 py-8">
-                                {row.advanced ? (
-                                    <img src={check} alt="Included" className="w-[30px] h-[30px] object-contain" />
-                                ) : (
-                                    <img src={crossed} alt="Not Included" className="w-[30px] h-[30px] object-contain" />
-                                )}
-                            </div>
-
-                            <div className="flex border-t border-[#f8f8f8] items-center justify-center bg-[#fbfbfb] px-5 py-8">
-                                {row.lite ? (
-                                    <img src={check} alt="Included" className="w-[30px] h-[30px] object-contain" />
-                                ) : (
-                                    <img src={crossed} alt="Not Included" className="w-[30px] h-[30px] object-contain" />
-                                )}
-                            </div>
-                        </div>
-                    ))}
                 </div>
             </div>
         </section>
@@ -327,7 +329,7 @@ function EffortlessSchoolBusManagementSection() {
     ];
 
     return (
-        <section className="mt-5 relative overflow-hidden bg-white px-6 py-10 md:px-10 lg:px-16 xl:px-20">
+        <section className="mt-5 relative overflow-hidden bg-white py-10">
             {/* Background doodle */}
             <div className="pointer-events-none absolute left-[14%] top-[105px] hidden opacity-20 md:block">
                 <svg
@@ -350,11 +352,11 @@ function EffortlessSchoolBusManagementSection() {
                 </svg>
             </div>
 
-            <div className="mx-auto max-w-[1500px]">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* Top heading */}
                 <div className="mx-auto max-w-[1000px] text-center">
                     <div className="relative z-10 mx-auto max-w-[770px] text-center">
-                        <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                        <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-sbText leading-[40px]">
                             Effortless School Bus Management
                         </h2>
 
@@ -425,7 +427,7 @@ function ExceptionalFeaturesSection() {
     ];
 
     return (
-        <section className="mt-12 relative overflow-hidden bg-sbBlue px-4 py-12 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+        <section className="mt-12 relative overflow-hidden bg-sbBlue py-12">
             {/* Pattern background */}
             <div
                 className="pointer-events-none absolute inset-0 opacity-[0.08]"
@@ -437,10 +439,10 @@ function ExceptionalFeaturesSection() {
                 }}
             />
 
-            <div className="relative mx-auto max-w-[1280px]">
+            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* Heading */}
                 <div className="text-center">
-                    <h2 className="text-[32px] font-semibold text-white leading-[40px]">
+                    <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-white leading-[40px]">
                         Exceptional Features from School Lift
                     </h2>
                     <div className="mx-auto mt-4 h-[3px] w-[60px] bg-white" />
@@ -528,7 +530,7 @@ The Transport dashboard is available on Android App and as a web interface which
         <section className="relative overflow-hidden bg-white">
             <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
                 <div className="flex flex-col items-center">
-                    <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-sbText leading-[40px]">
                         Frequently Asked Questions
                     </h2>
 
