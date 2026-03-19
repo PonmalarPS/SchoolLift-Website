@@ -45,32 +45,9 @@ const ReportCardManagement = () => {
 
 const ReportCardManagementSection = () => {
     return (
-        <section className="relative overflow-hidden bg-white px-6 pt-15 md:px-10 lg:px-16">
-            {/* bottom decorative icon */}
-            <div className="pointer-events-none absolute bottom-[10%] left-[15%] hidden opacity-20 md:block">
-                <svg
-                    width="150"
-                    height="110"
-                    viewBox="0 0 150 110"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="text-sbPurple"
-                >
-                    <path
-                        d="M36 57C36 42 50 31 68 31C87 31 101 42 101 57C101 72 87 83 68 83H56L42 94L46 80C40 75 36 66 36 57Z"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                    />
-                    <path
-                        d="M88 66C88 54 99 45 114 45C129 45 140 54 140 66C140 78 129 87 114 87H107L96 95L100 84C93 80 88 74 88 66Z"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                    />
-                </svg>
-            </div>
-
-            <div className="mx-auto max-w-[1400px] text-center">
-                <h1 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
+        <section className="relative overflow-hidden bg-white mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-10 pt-8 sm:px-6 lg:px-10 xl:px-14 text-center">
+                <h1 className="font-heading font-bold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-sbText mx-auto">
                     Report Card Management
                 </h1>
 
@@ -129,13 +106,13 @@ function EffortlessReportCardManagementSection() {
     ];
 
     return (
-        <section className="mt-5 relative overflow-hidden bg-white px-4 py-8 sm:px-6 lg:px-10 xl:px-12">
-            <div className="mx-auto max-w-[1300px]">
+        <section className="mt-10 relative overflow-hidden bg-white">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.95fr] gap-x-10 xl:gap-x-14 items-start">
                     {/* LEFT SIDE HEADER - Row 1 Col 1 */}
                     <div className="lg:col-start-1">
                         <div className="text-left">
-                            <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                            <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-sbText leading-[40px]">
                                 Effortless report card management with student report card software
                             </h2>
                             <div className="mt-6 h-[3px] w-[78px] rounded-full bg-[#4456d9]" />
@@ -273,7 +250,7 @@ const RevolutionizeStudentEvaluationSection = () => {
     ];
 
     return (
-        <section className="mt-5 relative overflow-hidden bg-white px-6 py-10 md:px-10 lg:px-16 xl:px-20">
+        <section className="mt-10 relative overflow-hidden bg-white">
             {/* Background doodle */}
             <div className="pointer-events-none absolute left-[14%] top-[105px] hidden opacity-20 md:block">
                 <svg
@@ -296,11 +273,11 @@ const RevolutionizeStudentEvaluationSection = () => {
                 </svg>
             </div>
 
-            <div className="mx-auto max-w-[1500px]">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
                 {/* Top heading */}
                 <div className="mx-auto max-w-[1000px] text-center">
                     <div className="relative z-10 mx-auto max-w-[770px] text-center">
-                        <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                        <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-sbText leading-[40px]">
                             Revolutionize student evaluation & improve student success
                         </h2>
 
@@ -478,6 +455,5 @@ function FaqRow({ item, isOpen, onToggle, isLast }) {
         </div>
     );
 }
-
 
 export default ReportCardManagement;

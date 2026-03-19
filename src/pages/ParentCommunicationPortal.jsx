@@ -67,9 +67,9 @@ const ParentCommunicationPortal = () => {
 
 const ParentCommunicationPortalSection = () => {
     return (
-        <section className="relative overflow-hidden bg-white px-6 pt-15 md:px-10 lg:px-16">
-            <div className="mx-auto max-w-[1400px] text-center">
-                <h1 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
+        <section className="relative overflow-hidden bg-white mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14 text-center">
+                <h1 className="font-heading font-bold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-sbText mx-auto">
                     Parent Communication Portal
                 </h1>
 
@@ -105,11 +105,11 @@ function UnifyingSimplifyingParentCommunication() {
     ];
 
     return (
-        <section className="bg-white px-4 py-12 sm:px-6 lg:px-10 xl:px-12">
-            <div className="mx-auto max-w-[1320px]">
+        <section className="bg-white mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
                 {/* heading */}
                 <div className="text-center">
-                    <h2 className="text-[32px] font-semibold leading-[1.2] text-black">
+                    <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold leading-[1.2] text-black">
                         Unifying & Simplifying Parent Communication
                     </h2>
                     <div className="mx-auto mt-4 h-[4px] w-[58px] rounded-full bg-[#4456d9]" />
@@ -194,13 +194,13 @@ const FeatureCard = ({ title, icon }) => {
 
 function EverythingSchoolInOneApp() {
     return (
-        <section className="bg-white px-4 py-10 sm:px-6 lg:px-10 xl:px-12">
-            <div className="mx-auto max-w-[1280px]">
+        <section className="bg-white mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
                 <div className="overflow-hidden rounded-[34px] bg-gradient-to-b from-[#a81fb0] via-[#971fa9] to-[#7e2b8f] px-8 py-10 sm:px-10 sm:py-12 md:px-14 lg:px-16 lg:py-14 xl:px-16 xl:py-16">
                     <div className="grid items-center gap-10 lg:grid-cols-[1fr_0.95fr] lg:gap-6 xl:grid-cols-[1fr_1fr]">
                         {/* Left content */}
                         <div className="max-w-[620px] text-white">
-                            <h2 className="text-[32px] font-semibold leading-[1.15] text-white">
+                            <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold leading-[1.15] text-white">
                                 Everything School in One App
                             </h2>
 
@@ -306,7 +306,7 @@ const BetterInvolvementSection = () => {
     ];
 
     return (
-        <section className="mt-5 relative overflow-hidden bg-white px-6 py-10 md:px-10 lg:px-16 xl:px-20">
+        <section className="mt-10 relative overflow-hidden bg-white">
             {/* Background doodle */}
             <div className="pointer-events-none absolute left-[14%] top-[105px] hidden opacity-20 md:block">
                 <svg
@@ -329,11 +329,11 @@ const BetterInvolvementSection = () => {
                 </svg>
             </div>
 
-            <div className="mx-auto max-w-[1500px]">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
                 {/* Top heading */}
                 <div className="mx-auto max-w-[1000px] text-center">
                     <div className="relative z-10 mx-auto max-w-[770px] text-center">
-                        <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                        <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-sbText leading-[40px]">
                             Better Involvement, Better Outcomes                        </h2>
 
                         <div className="mx-auto mt-6 h-[4px] w-[78px] rounded-full bg-sbBlue" />
@@ -411,13 +411,13 @@ function GetEveryoneOnTheSamePageSection() {
     ];
 
     return (
-        <section className="relative overflow-hidden bg-white px-4 py-10 sm:px-6 lg:px-10 xl:px-12">
+        <section className="relative overflow-hidden bg-white mt-10">
 
-            <div className="mx-auto max-w-[1280px]">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
 
                 {/* heading */}
                 <div className="mx-auto max-w-[940px] text-center">
-                    <h2 className="text-[32px] font-semibold text-sbText leading-[40px]">
+                    <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-sbText leading-[40px]">
                         Get Everyone On The Same Page
                     </h2>
 
@@ -432,10 +432,10 @@ function GetEveryoneOnTheSamePageSection() {
                 </div>
 
                 {/* layout */}
-                <div className="mt-12 grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.12fr_0.88fr] lg:gap-10">
+                <div className="mt-12 grid grid-cols-1 items-center gap-5 lg:grid-cols-[1.12fr_0.88fr] lg:gap-5">
 
                     {/* LEFT SIDE */}
-                    <div className="pt-2">
+                    <div className="lg:pt-2">
                         {accordionItems.map((item, index) => {
                             const isOpen = openIndex === index;
 
@@ -470,8 +470,8 @@ function GetEveryoneOnTheSamePageSection() {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="flex justify-center lg:justify-end">
-                        <div className="w-full max-w-[420px] rounded-[18px] border border-[#ededed] bg-white p-4 shadow-[0_8px_28px_rgba(0,0,0,0.05)]">
+                    <div className="flex justify-center lg:justify-end lg:pt-2">
+                        <div className="w-full flex items-center justify-center max-w-[550px] lg:h-[340px] rounded-[24px] border border-[#ededed] bg-white p-6 shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
 
                             <img
                                 src={
@@ -480,7 +480,7 @@ function GetEveryoneOnTheSamePageSection() {
                                         : sendUpdates
                                 }
                                 alt="Parent Communication Portal"
-                                className="mx-auto w-full max-w-[320px] object-contain"
+                                className="mx-auto w-full max-w-[450px] h-full object-contain"
                             />
 
                         </div>
@@ -544,16 +544,16 @@ No hassle to manage and track communication with multiple seperate groups`
     ];
 
     return (
-        <section className="relative overflow-hidden bg-[#fcf7fc] w-full py-12 md:py-16 lg:py-20">
+        <section className="relative overflow-hidden bg-[#fcf7fc] w-full mt-10">
             {/* background pattern */}
             <div className="absolute inset-0 opacity-[0.14]">
                 <div className="h-full w-full bg-[radial-gradient(circle_at_20px_20px,#d78adf_1.2px,transparent_1.2px)] bg-[length:38px_38px]" />
             </div>
 
-            <div className="relative mx-auto max-w-[1420px] px-4 sm:px-6 lg:px-8">
+            <div className="relative mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
                 {/* heading */}
                 <div className="mb-8 flex flex-col items-center">
-                    <h2 className="text-[32px] font-semibold text-sbPurple leading-[40px]">
+                    <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-semibold text-sbPurple leading-[40px]">
                         Student Information sorted the School Lift Way
                     </h2>
                     <div className="mt-4 h-[4px] w-[52px] rounded-full bg-sbPurple" />
@@ -566,55 +566,57 @@ No hassle to manage and track communication with multiple seperate groups`
                 </div>
 
                 {/* table */}
-                <div className="overflow-hidden rounded-[24px] bg-sbWhite shadow-[0_20px_50px_rgba(170,46,177,0.10)]">
-                    {/* header */}
-                    <div className="grid grid-cols-[1.05fr_1.05fr_1fr]">
-                        <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
-                            FEATURE
+                <div className="overflow-x-auto rounded-[24px] bg-sbWhite shadow-[0_20px_50px_rgba(170,46,177,0.10)]">
+                    <div className="min-w-[800px]">
+                        {/* header */}
+                        <div className="grid grid-cols-[1.05fr_1.05fr_1fr]">
+                            <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
+                                FEATURE
+                            </div>
+                            <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
+                                WHATSAPP
+                            </div>
+                            <div className="bg-sbPurple px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-white">
+                                SCHOOL LIFT PARENT PORTAL
+                            </div>
                         </div>
-                        <div className="border-r border-gray-200 bg-white px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-sbText">
-                            WHATSAPP
-                        </div>
-                        <div className="bg-sbPurple px-10 py-14 font-primary text-center text-[15px] font-bold uppercase tracking-[0.02em] text-white">
-                            SCHOOL LIFT PARENT PORTAL
-                        </div>
+
+                        {/* rows */}
+                        {comparisonRows.map((row) => (
+                            <div
+                                key={row.feature}
+                                className="grid grid-cols-[1.05fr_1.05fr_1fr]"
+                            >
+                                <div className="flex items-center border-t border-r border-gray-200 bg-white px-10 py-10">
+                                    <p className="font-primary text-[16px] font-semibold text-sbText">
+                                        {row.feature}
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 border-t border-r border-gray-200 bg-white px-10 py-8">
+                                    <img
+                                        src={row.otherIcon}
+                                        alt=""
+                                        className="h-[40px] w-[40px] object-contain shrink-0"
+                                    />
+                                    <p className="font-primary text-[16px] leading-[1.5] text-[#555555] md:text-[16px] font-extralight">
+                                        {row.otherText}
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 border-t border-white/20 bg-[#a61fb1] px-7 py-8 md:px-8">
+                                    <img
+                                        src={row.plusIcon}
+                                        alt=""
+                                        className="h-[40px] w-[40px] object-contain shrink-0"
+                                    />
+                                    <p className="font-primary text-[16px] leading-[1.5] font-extralight text-white/95 md:text-[16px]">
+                                        {row.plusText}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-
-                    {/* rows */}
-                    {comparisonRows.map((row) => (
-                        <div
-                            key={row.feature}
-                            className="grid grid-cols-[1.05fr_1.05fr_1fr]"
-                        >
-                            <div className="flex items-center border-t border-r border-gray-200 bg-white px-10 py-10">
-                                <p className="font-primary text-[16px] font-semibold text-sbText">
-                                    {row.feature}
-                                </p>
-                            </div>
-
-                            <div className="flex items-center gap-4 border-t border-r border-gray-200 bg-white px-10 py-8">
-                                <img
-                                    src={row.otherIcon}
-                                    alt=""
-                                    className="h-[40px] w-[40px] object-contain shrink-0"
-                                />
-                                <p className="font-primary text-[16px] leading-[1.5] text-[#555555] md:text-[16px] font-extralight">
-                                    {row.otherText}
-                                </p>
-                            </div>
-
-                            <div className="flex items-center gap-4 border-t border-white/20 bg-[#a61fb1] px-7 py-8 md:px-8">
-                                <img
-                                    src={row.plusIcon}
-                                    alt=""
-                                    className="h-[40px] w-[40px] object-contain shrink-0"
-                                />
-                                <p className="font-primary text-[16px] leading-[1.5] font-extralight text-white/95 md:text-[16px]">
-                                    {row.plusText}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
                 </div>
             </div>
         </section>

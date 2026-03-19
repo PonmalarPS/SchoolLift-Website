@@ -67,62 +67,62 @@ const AboutUs = () => {
 
 const AboutSection = () => {
     return (
-        <section className="bg-sbBgLight py-15 px-6 text-center">
+        <section className="bg-white mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14 text-center">
+                {/* Main Heading */}
+                <h1 className="font-heading font-bold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-sbText mx-auto">
+                    Enabling equitable access to high-quality education
+                </h1>
 
-            {/* Main Heading */}
-            <h1 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
-                Enabling equitable access to high-quality education
-            </h1>
+                {/* Blue Divider */}
+                <div className="w-16 h-[3px] bg-sbBlueDark mx-auto mt-6 mb-14 rounded-full"></div>
 
-            {/* Blue Divider */}
-            <div className="w-16 h-[3px] bg-sbBlueDark mx-auto mt-6 mb-14 rounded-full"></div>
+                {/* About Title */}
+                <p className="font-bold text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] text-sbText mb-4">
+                    About School Lift
+                </p>
 
-            {/* About Title */}
-            <p className="font-bold text-[30px] text-sbText mb-4">
-                About School Lift
-            </p>
+                {/* About Paragraph */}
+                <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto">
+                    We are an edtech company building solutions that empower schools & teachers,
+                    make the learning process enjoyable for students and enable parental
+                    aspirations. We strive to break the digital divide in the Indian school
+                    education system and create a brighter future for all children
+                    irrespective of their background.
+                </p>
 
-            {/* About Paragraph */}
-            <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto">
-                We are an edtech company building solutions that empower schools & teachers,
-                make the learning process enjoyable for students and enable parental
-                aspirations. We strive to break the digital divide in the Indian school
-                education system and create a brighter future for all children
-                irrespective of their background.
-            </p>
+                {/* What We Do */}
+                <p className="font-bold text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] text-sbText mb-4 mt-16">
+                    What We Do
+                </p>
 
-            {/* What We Do */}
-            <p className="font-bold text-[30px] text-sbText mb-4 mt-16">
-                What We Do
-            </p>
+                <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto mb-6">
+                    School Lift is a trusted technology partner offering high-quality,
+                    affordable and scalable solutions to schools across India. As a company,
+                    we are equally passionate about education and technology. Our solutions
+                    can empower teachers, enhance learning experiences for students, keep
+                    parents involved, and help Indian schools become future-ready.
+                </p>
 
-            <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto mb-6">
-                School Lift is a trusted technology partner offering high-quality,
-                affordable and scalable solutions to schools across India. As a company,
-                we are equally passionate about education and technology. Our solutions
-                can empower teachers, enhance learning experiences for students, keep
-                parents involved, and help Indian schools become future-ready.
-            </p>
+                <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto mb-6">
+                    School Lift has a whole range of technology solutions that revolutionize
+                    every aspect of running a school from integrated classroom solutions to
+                    home learning solutions and school management software.
+                </p>
 
-            <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto mb-6">
-                School Lift has a whole range of technology solutions that revolutionize
-                every aspect of running a school from integrated classroom solutions to
-                home learning solutions and school management software.
-            </p>
+                <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto">
+                    In our journey of 10 years, we have constantly invested in developing new
+                    solutions and advancing our existing offerings to support the schools
+                    we've partnered with. We aspire to build long-term relationships with
+                    schools and become a trusted one-stop technology partner enabling Indian
+                    schools to become vibrant, world-class learning centers of excellence.
+                </p>
 
-            <p className="font-primary font-extralight text-lg leading-8 text-sbTextLight max-w-4xl mx-auto">
-                In our journey of 10 years, we have constantly invested in developing new
-                solutions and advancing our existing offerings to support the schools
-                we've partnered with. We aspire to build long-term relationships with
-                schools and become a trusted one-stop technology partner enabling Indian
-                schools to become vibrant, world-class learning centers of excellence.
-            </p>
-
-            <CommonButton
-                label="Get in Touch"
-                className="mt-14"
-            />
-
+                <CommonButton
+                    label="Get in Touch"
+                    className="mt-14"
+                />
+            </div>
         </section>
     );
 };
@@ -149,17 +149,17 @@ const VisionSection = () => {
 
     return (
         <section
-            className="relative py-14 px-6 bg-cover bg-center text-center"
+            className="relative bg-cover bg-center text-center mt-10"
             style={{ backgroundImage: `url(${visionImage})` }}
         >
             {/* Dark Overlay */}
             <div className="absolute inset-0"></div>
 
             {/* Content Wrapper */}
-            <div className="relative z-10 max-w-7xl mx-auto">
+            <div className="relative z-10 max-w-[1600px] mx-auto px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
 
                 {/* Heading */}
-                <h1 className="font-heading text-4xl md:text-4xl text-sbWhite">
+                <h1 className="font-heading text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] text-sbWhite">
                     Our Vision
                 </h1>
 
@@ -218,69 +218,71 @@ const JourneySection = () => {
     };
 
     return (
-        <section className="relative py-15 bg-sbWhite overflow-hidden">
+        <section className="relative mt-10 bg-sbWhite overflow-hidden">
 
             {/* Content Wrapper */}
             <div className="relative z-10">
 
                 {/* Heading */}
-                <div className="text-center mb-10 px-6">
-                    <h2 className="font-bold font-heading text-3xl text-sbText">
+                <div className="text-center mb-0 mx-auto max-w-[1600px] px-4 pb-4 pt-8 sm:px-6 lg:px-10 xl:px-14">
+                    <h2 className="font-bold font-heading text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] text-sbText">
                         Our Journey so far
                     </h2>
                     <div className="w-16 h-[3px] bg-sbBlueDark mx-auto mt-4 rounded-full"></div>
                 </div>
 
-                {/* Scroll Container */}
-                <div
-                    ref={scrollRef}
-                    className="flex gap-8 overflow-x-auto px-10 py-7 scroll-smooth snap-x snap-mandatory no-scrollbar"
-                >
-                    {journeyData.map((item, index) => {
-                        const isActive = index === activeIndex;
-                        return (
-                            <div
-                                key={index}
-                                onClick={() => handleClick(index)}
-                                className="
-                                    group
-                                    cursor-pointer
-                                    snap-center
-                                    min-w-[280px]
-                                    max-w-[280px]
-                                    p-6
-                                    rounded-sbXl
-                                    transition-all duration-500
-                                    bg-sbPurpleLight border border-sbPurple/20 text-sbText
-                                    hover:bg-gradient-to-br hover:from-sbPurple hover:to-sbAccentPurple hover:text-sbWhite hover:shadow-sbHover hover:scale-105
-                                "
-                            >
-                                {/* Year Badge */}
+                {/* Scroll Container Wrapper */}
+                <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
+                    <div
+                        ref={scrollRef}
+                        className="flex gap-8 overflow-x-auto py-7 scroll-smooth snap-x snap-mandatory no-scrollbar"
+                    >
+                        {journeyData.map((item, index) => {
+                            const isActive = index === activeIndex;
+                            return (
                                 <div
+                                    key={index}
+                                    onClick={() => handleClick(index)}
                                     className="
-                                        inline-block
-                                        px-6 py-2
-                                        rounded-sbLg
-                                        text-[18px]
-                                        font-primary
-                                        font-semibold
-                                        mb-3
-                                        leading-7
-                                        bg-sbPurple/20 text-sbPurpleDark
-                                        group-hover:bg-sbWhite/20 group-hover:text-sbWhite
-                                        transition-colors duration-300
+                                        group
+                                        cursor-pointer
+                                        snap-center
+                                        min-w-[280px]
+                                        max-w-[280px]
+                                        p-6
+                                        rounded-sbXl
+                                        transition-all duration-500
+                                        bg-sbPurpleLight border border-sbPurple/20 text-sbText
+                                        hover:bg-gradient-to-br hover:from-sbPurple hover:to-sbAccentPurple hover:text-sbWhite hover:shadow-sbHover hover:scale-105
                                     "
                                 >
-                                    {item.year}
-                                </div>
+                                    {/* Year Badge */}
+                                    <div
+                                        className="
+                                            inline-block
+                                            px-6 py-2
+                                            rounded-sbLg
+                                            text-[18px]
+                                            font-primary
+                                            font-semibold
+                                            mb-3
+                                            leading-7
+                                            bg-sbPurple/20 text-sbPurpleDark
+                                            group-hover:bg-sbWhite/20 group-hover:text-sbWhite
+                                            transition-colors duration-300
+                                        "
+                                    >
+                                        {item.year}
+                                    </div>
 
-                                {/* Text */}
-                                <p className="font-primary text-sbTextLight group-hover:text-sbWhite font-thin text-[16px] leading-7 transition-colors duration-300">
-                                    {item.text}
-                                </p>
-                            </div>
-                        );
-                    })}
+                                    {/* Text */}
+                                    <p className="font-primary text-sbTextLight group-hover:text-sbWhite font-thin text-[16px] leading-7 transition-colors duration-300">
+                                        {item.text}
+                                    </p>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
@@ -322,31 +324,31 @@ const OurValuesSection = () => {
     ];
 
     return (
-        <section className="bg-sbWhite pb-15">
+        <section className="bg-sbWhite mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
+                {/* Heading */}
+                <div className="text-center mb-10">
+                    <h2 className="font-bold font-heading text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] text-sbText">
+                        Our Values
+                    </h2>
 
-            {/* Heading */}
-            <div className="text-center mb-10 px-6">
-                <h2 className="font-bold font-heading text-3xl text-sbText">
-                    Our Values
-                </h2>
+                    <div className="w-16 h-[3px] bg-sbBlueDark mx-auto mt-4 rounded-full"></div>
 
-                <div className="w-16 h-[3px] bg-sbBlueDark mx-auto mt-4 rounded-full"></div>
+                    <p className="mt-6 font-primary font-extralight text-base leading-7 text-sbTextLight max-w-4xl mx-auto">
+                        They serve as a compass guiding who we are, how we work, and what we’re focused on next.
+                    </p>
+                </div>
 
-                <p className="mt-6 font-primary font-extralight text-base leading-7 text-sbTextLight max-w-4xl mx-auto">
-                    They serve as a compass guiding who we are, how we work, and what we’re focused on next.
-                </p>
-            </div>
+                {/* Grid */}
+                <div className="mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-18 gap-x-16">
 
-            {/* Grid */}
-            <div className="max-w-[1300px] mx-auto px-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-18 gap-x-16">
-
-                {values.map((item, index) => (
-                    <div
-                        key={index}
-                        className="group text-center transition-all duration-300"
-                    >
-                        {/* Icon Circle */}
-                        <div className="
+                    {values.map((item, index) => (
+                        <div
+                            key={index}
+                            className="group text-center transition-all duration-300"
+                        >
+                            {/* Icon Circle */}
+                            <div className="
               w-[120px] h-[120px] mx-auto rounded-full
               bg-sbPurpleLight
               flex items-center justify-center
@@ -357,35 +359,36 @@ const OurValuesSection = () => {
               group-hover:shadow-lg
             ">
 
-                            <img
-                                src={item.icon}
-                                alt={item.title}
-                                className="
+                                <img
+                                    src={item.icon}
+                                    alt={item.title}
+                                    className="
                   w-[50px] h-[50px] object-contain
                   transition-transform duration-300
                   group-hover:scale-110
                 "
-                            />
+                                />
 
-                        </div>
+                            </div>
 
-                        {/* Title */}
-                        <p className="
+                            {/* Title */}
+                            <p className="
               text-[17px] font-semibold text-sbText mb-5
               transition-colors duration-300
               group-hover:text-sbPurpleDark
             ">
-                            {item.title}
-                        </p>
+                                {item.title}
+                            </p>
 
-                        {/* Description */}
-                        <p className="font-primary font-extralight text-base leading-7 text-sbTextLight max-w-4xl mx-auto">
-                            {item.desc}
-                        </p>
+                            {/* Description */}
+                            <p className="font-primary font-extralight text-base leading-7 text-sbTextLight max-w-4xl mx-auto">
+                                {item.desc}
+                            </p>
 
-                    </div>
-                ))}
+                        </div>
+                    ))}
 
+                </div>
             </div>
         </section>
     );
@@ -421,24 +424,26 @@ const OurTeamSection = () => {
     ];
 
     return (
-        <section className="bg-sbWhite">
-            {/* Header */}
-            <div className="text-center pt-12 pb-14 px-6">
-                <h2 className="font-bold font-heading text-3xl text-sbText">
-                    Our Team
-                </h2>
+        <section className="bg-sbWhite mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-4 pt-8 sm:px-6 lg:px-10 xl:px-14">
+                {/* Header */}
+                <div className="text-center pb-2">
+                    <h2 className="font-bold font-heading text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] text-sbText">
+                        Our Team
+                    </h2>
 
-                <div className="w-16 h-[3px] bg-sbBlueDark mx-auto mt-4 rounded-full" />
+                    <div className="w-16 h-[3px] bg-sbBlueDark mx-auto mt-4 rounded-full" />
 
-                <p className="mt-6 font-primary font-extralight text-base leading-7 text-sbTextLight max-w-4xl mx-auto">
-                    We’re a team of purpose-driven individuals on a collective mission to
-                    transform the future of Indian school education.
-                </p>
+                    <p className="mt-6 font-primary font-extralight text-base leading-7 text-sbTextLight max-w-4xl mx-auto">
+                        We’re a team of purpose-driven individuals on a collective mission to
+                        transform the future of Indian school education.
+                    </p>
+                </div>
             </div>
 
             {/* Blue Section */}
-            <div className="bg-sbBlue pt-16 pb-20 px-6">
-                <div className="max-w-[1100px] mx-auto space-y-12">
+            <div className="bg-sbBlue mt-10 py-16">
+                <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14 space-y-12">
 
                     {/* ================= TOP ROW ================= */}
                     <div className="grid lg:grid-cols-3 gap-8 items-stretch">
