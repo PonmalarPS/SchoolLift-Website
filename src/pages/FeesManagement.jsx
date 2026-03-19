@@ -80,7 +80,7 @@ const FeeManagementSection = () => {
     return (
         <section className="relative overflow-hidden bg-white px-6 pt-15 md:px-10 lg:px-16">
             <div className="mx-auto max-w-[1400px] text-center">
-                <h1 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
+                <h1 className="font-heading font-bold text-[32px] md:text-[40px] leading-tight text-sbText mx-auto">
                     Fee Management Solutions
                 </h1>
 
@@ -148,8 +148,8 @@ function TakeChargeSection() {
     ];
 
     return (
-        <section className="mt-5 relative overflow-hidden bg-white px-4 py-8 sm:px-6 lg:px-10 xl:px-12">
-            <div className="mx-auto max-w-[1300px]">
+        <section className="mt-5 relative overflow-hidden bg-white py-8">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.95fr] gap-x-10 xl:gap-x-14 items-start">
                     {/* LEFT SIDE HEADER - Row 1 Col 1 */}
                     <div className="lg:col-start-1">
@@ -208,7 +208,7 @@ function TakeChargeSection() {
                                 src={
                                     openIndex !== -1
                                         ? accordionItems[openIndex].image
-                                        : sISUpdateScreen4
+                                        : Fee_Review_Reports_Screen4
                                 }
                                 alt="Student information dashboard"
                                 className="w-full h-full object-contain"
@@ -279,8 +279,8 @@ function HassleFreeFeeManagementSection() {
     ];
 
     return (
-        <section className="mt-4 relative overflow-hidden bg-white px-6 py-7 md:px-10 lg:px-16 xl:px-20">
-            <div className="mx-auto max-w-[1500px]">
+        <section className="mt-4 relative overflow-hidden bg-white py-7">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* Top heading */}
                 <div className="mx-auto max-w-[1000px] text-center">
                     <div className="relative z-10 mx-auto max-w-[770px] text-center">
@@ -297,9 +297,9 @@ function HassleFreeFeeManagementSection() {
 
                 {/* Feature grid */}
                 <div className="mt-10 grid grid-cols-1 gap-y-8 md:mt-10 md:grid-cols-2 md:gap-x-20 lg:gap-x-28 xl:gap-x-36">
-                    {feeFeatures.map((item) => (
+                    {feeFeatures.map((item, index) => (
                         <div
-                            key={item.id}
+                            key={index}
                             className="flex items-start gap-8 lg:gap-10"
                         >
                             <div className="flex h-[70px] w-[70px] shrink-0 items-center justify-center">
@@ -354,17 +354,17 @@ function WhyChooseUsSection() {
         },
     ];
     return (
-        <section className="bg-white px-4 py-10 sm:px-6 lg:px-10 xl:px-12">
-            <div className="pt-19 mx-auto max-w-[1310px] overflow-hidden rounded-[28px] bg-gradient-to-b from-[#a31dac] to-[#7f2a8e] px-6 sm:px-8 md:px-10 lg:px-14 xl:px-16">
-                <div className="grid items-stretch gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8 xl:grid-cols-[0.95fr_1.05fr]">
+        <section className="bg-white py-10 px-4 sm:px-6 lg:px-10 xl:px-14">
+            <div className="pt-10 lg:pt-16 mx-auto max-w-[1500px] overflow-hidden rounded-[28px] bg-gradient-to-b from-[#a31dac] to-[#7f2a8e] px-4 sm:px-8 md:px-10 lg:px-14 xl:px-16">
+                <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8 xl:grid-cols-[0.95fr_1.05fr]">
                     {/* Left Side */}
                     <div className="relative flex flex-col items-center lg:items-start">
                         <div className="w-full text-center lg:pl-24 lg:text-left xl:pl-28 flex flex-col items-center lg:items-start">
-                            <p className="text-[20px] font-extralight uppercase tracking-[0.3px] text-white/90">
+                            <p className="text-[16px] md:text-[20px] font-extralight uppercase tracking-[0.3px] text-white/90">
                                 THE SCHOOL LIFT ADVANTAGE
                             </p>
 
-                            <h2 className="mt-2 text-[30px] font-medium leading-[1.15] text-white">
+                            <h2 className="mt-2 text-[24px] md:text-[30px] font-medium leading-[1.15] text-white">
                                 Why Choose Us?
                             </h2>
 
@@ -385,16 +385,16 @@ function WhyChooseUsSection() {
                         <div className="space-y-7 sm:space-y-8 lg:space-y-9">
                             {advantagePoints.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4 sm:gap-5">
-                                    <div className="flex h-[65px] w-[65px] shrink-0 items-center justify-center rounded-full bg-white/18 backdrop-blur-[1px]">
-                                        <Check className="h-9 w-9 text-white" strokeWidth={4} />
+                                    <div className="flex h-[60px] w-[60px] md:h-[65px] md:w-[65px] shrink-0 items-center justify-center rounded-full bg-white/18 backdrop-blur-[1px]">
+                                        <Check className="h-7 w-7 md:h-9 md:w-9 text-white" strokeWidth={4} />
                                     </div>
 
                                     <div className="pt-1">
-                                        <p className="text-[17px] font-medium leading-[1.35] text-white">
+                                        <p className="text-[16px] md:text-[17px] font-medium leading-[1.35] text-white">
                                             {item.title}
                                         </p>
 
-                                        <p className="mt-2 font-extralight max-w-[560px] text-[17px] leading-[1.65] text-white/80">
+                                        <p className="mt-2 font-extralight max-w-[560px] text-[15px] md:text-[17px] leading-[1.65] text-white/80">
                                             {item.description}
                                         </p>
                                     </div>
@@ -473,7 +473,7 @@ function FeeManagementProcessSection() {
         },
     ];
     return (
-        <section className="mt-10 relative overflow-hidden bg-[#4456d9] px-4 py-14 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+        <section className="mt-10 relative overflow-hidden bg-[#4456d9] py-14">
             {/* background pattern layer */}
             <div className="absolute inset-0 opacity-[0.10]">
                 <div
@@ -486,7 +486,7 @@ function FeeManagementProcessSection() {
                 />
             </div>
 
-            <div className="relative mx-auto max-w-[1820px]">
+            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 {/* heading */}
                 <div className="text-center">
                     <h2 className="text-[32px] font-semibold text-white leading-[40px]">
@@ -496,7 +496,7 @@ function FeeManagementProcessSection() {
                 </div>
 
                 {/* cards */}
-                <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-5 xl:gap-7">
+                <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-7">
                     {processItems.map((item, index) => (
                         <div key={index} className="relative h-full">
                             <div className="rounded-[18px] border border-[#d9d9d9] bg-[#f7f7f7] px-8 pb-10 pt-12 text-center shadow-sm h-full">
@@ -536,7 +536,7 @@ function FeeManagementProcessSection() {
 const WhatSchoolsSay = () => {
     return (
         <section className="w-full bg-sbBgLight py-[40px]">
-            <div className="w-full px-6 md:px-10 lg:px-16">
+            <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-14">
                 <div className="mb-15 flex flex-col items-center">
                     {/* Heading */}
                     <h2 className="text-[32px] font-semibold text-sbText">
@@ -546,7 +546,7 @@ const WhatSchoolsSay = () => {
                     <div className="w-[70px] h-[4px] bg-sbBlue mx-auto mt-4 mb-0 rounded-full" />
                 </div>
 
-                <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 lg:gap-14">
                     {testimonials.map((item) => (
                         <TestimonialCard key={item.id} item={item} />
                     ))}
