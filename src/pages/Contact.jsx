@@ -33,12 +33,12 @@ const Contact = () => {
 
 const ContactSection = () => {
     return (
-        <section className="bg-white py-10 px-6">
-            <div className="max-w-[1200px] mx-auto">
+        <section className="bg-white mt-10">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
 
                 {/* ===== Header ===== */}
-                <div className="text-center mb-20">
-                    <h2 className="font-heading font-bold text-[40px] leading-tight text-sbText mx-auto">
+                <div className="text-center mb-10 sm:mb-16 md:mb-20">
+                    <h2 className="font-heading font-bold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-sbText mx-auto">
                         Contact Us
                     </h2>
 
@@ -73,7 +73,7 @@ const ContactSection = () => {
                             </p>
                         </div>
 
-                        <div className="mt-12 flex flex-col sm:flex-row justify-center gap-6">
+                        <div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
                             <ContactButton
                                 label="Request Call Back"
                                 showArrow={false}
@@ -113,7 +113,7 @@ const ContactSection = () => {
                             </p>
                         </div>
 
-                        <div className="mt-12 flex flex-col sm:flex-row justify-center gap-6">
+                        <div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
                             <ContactButton
                                 label="Chat with Support"
                                 showArrow={false}
@@ -142,8 +142,8 @@ const ContactSection = () => {
 
 const ContactFormSection = () => {
     return (
-        <section className="bg-white pb-10 px-6">
-            <div className="max-w-[1250px] mx-auto grid lg:grid-cols-2 gap-14 items-stretch">
+        <section className="bg-white mt-5">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14 grid lg:grid-cols-2 gap-14 items-stretch">
                 {/* ================= LEFT SIDE ================= */}
                 <ContactForm />
 
@@ -157,7 +157,7 @@ const ContactFormSection = () => {
 const ContactForm = () => {
     return (
         <div className="flex flex-col h-full text-left">
-            <h2 className="font-heading font-bold text-[30px] leading-tight text-sbText pb-5">
+            <h2 className="font-heading font-bold text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] leading-tight text-sbText pb-5">
                 Send us a Message
             </h2>
 
@@ -215,7 +215,7 @@ const ContactForm = () => {
                 </div>
 
                 {/* Phone + Role */}
-                <div className="grid grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                     <div>
                         <label className="block mb-2 text-sbText font-semibold text-[15px]">
                             Your Phone Number *
@@ -267,7 +267,7 @@ const ContactForm = () => {
 const LocationSection = () => {
     return (
         <div className="flex flex-col h-full text-left">
-            <h2 className="font-heading font-bold text-[30px] leading-tight text-sbText pb-5">
+            <h2 className="font-heading font-bold text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] leading-tight text-sbText pb-5">
                 Visit Our Office
             </h2>
 
@@ -339,19 +339,19 @@ const LocationSection = () => {
 
 const GetInTouch = () => {
     return (
-        <section className="bg-white pb-10 px-6">
-            <div className="max-w-[1250px] mx-auto">
+        <section className="bg-white mt-5">
+            <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-8 sm:px-6 lg:px-10 xl:px-14">
 
                 {/* ===== Heading ===== */}
-                <h2 className="text-center mb-20 font-heading font-bold text-[30px] leading-tight text-sbText mx-auto">
+                <h2 className="text-center mb-10 sm:mb-16 md:mb-20 font-heading font-bold text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] leading-tight text-sbText mx-auto">
                     Get in Touch
                 </h2>
 
                 {/* ===== Cards Grid ===== */}
-                <div className="grid lg:grid-cols-3 gap-10">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                     {/* ================= Call Us ================= */}
-                    <div className="relative bg-white rounded-[26px] shadow-[0_25px_60px_rgba(0,0,0,0.08)] px-10 pt-20 pb-14 text-center">
+                    <div className="relative bg-white rounded-[26px] shadow-[0_25px_60px_rgba(0,0,0,0.08)] px-6 sm:px-10 pt-20 pb-14 text-center">
 
                         {/* Floating Icon */}
                         <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-sbBgLight w-16 h-16 rounded-full flex items-center justify-center">
@@ -362,23 +362,26 @@ const GetInTouch = () => {
                             Call Us
                         </h3>
 
-                        <div className="grid grid-cols-2 mb-6 text-center font-light text-sbTextLight text-lg">
-                            <span>Sales</span>
-                            <span>Support</span>
-                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-2 justify-items-center">
+                            {/* Sales Group */}
+                            <div className="flex flex-col items-center">
+                                <span className="mb-4 text-sbTextLight font-light text-lg">Sales</span>
+                                <ContactButton
+                                    label="08045680808"
+                                    variant="outline"
+                                    showArrow={false}
+                                />
+                            </div>
 
-                        <div className="grid grid-cols-2 gap-4 px-2">
-                            <ContactButton
-                                label="08045680808"
-                                variant="outline"
-                                showArrow={false}
-                            />
-
-                            <ContactButton
-                                label="08045680808"
-                                variant="outline"
-                                showArrow={false}
-                            />
+                            {/* Support Group */}
+                            <div className="flex flex-col items-center">
+                                <span className="mb-4 text-sbTextLight font-light text-lg">Support</span>
+                                <ContactButton
+                                    label="08045680808"
+                                    variant="outline"
+                                    showArrow={false}
+                                />
+                            </div>
                         </div>
                     </div>
 
@@ -394,23 +397,26 @@ const GetInTouch = () => {
                         </h3>
 
                         {/* Center aligned Sales / Support */}
-                        <div className="grid grid-cols-2 mb-6 text-center font-light text-sbTextLight text-lg">
-                            <span>Sales</span>
-                            <span>Support</span>
-                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-2 justify-items-center">
+                            {/* Sales Group */}
+                            <div className="flex flex-col items-center">
+                                <span className="mb-4 text-sbTextLight font-light text-lg">Sales</span>
+                                <ContactButton
+                                    label="Chat Now"
+                                    variant="outline"
+                                    showArrow={false}
+                                />
+                            </div>
 
-                        <div className="grid grid-cols-2 gap-4 px-2">
-                            <ContactButton
-                                label="Chat Now"
-                                variant="outline"
-                                showArrow={false}
-                            />
-
-                            <ContactButton
-                                label="Chat Now"
-                                variant="outline"
-                                showArrow={false}
-                            />
+                            {/* Support Group */}
+                            <div className="flex flex-col items-center">
+                                <span className="mb-4 text-sbTextLight font-light text-lg">Support</span>
+                                <ContactButton
+                                    label="Chat Now"
+                                    variant="outline"
+                                    showArrow={false}
+                                />
+                            </div>
                         </div>
                     </div>
 
@@ -425,7 +431,7 @@ const GetInTouch = () => {
                             Email
                         </h3>
 
-                        <div className="grid grid-cols-[80px_1fr] gap-y-6 text-lg px-2">
+                        <div className="grid grid-cols-1 sm:grid-cols-[80px_1fr] gap-y-6 text-lg px-2">
                             {/* Sales Row */}
                             <span className="text-sbTextLight font-light text-lg">Sales</span>
                             <span className="text-sbBlue font-medium break-all text-lg">
