@@ -2,14 +2,14 @@ import React from 'react';
 
 const HeroSection = ({
     imgSrc,
-    heightClasses = "h-[220px] sm:h-[320px] md:h-[450px] lg:h-[650px]"
+    heightClasses = "h-auto sm:h-[360px] md:h-[450px] lg:h-[650px]"
 }) => {
     return (
         <section className={`relative w-full overflow-hidden ${heightClasses}`}>
             <img
                 src={imgSrc}
                 alt="Hero Banner"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="w-full h-auto sm:absolute sm:inset-0 sm:h-full sm:object-cover"
             />
         </section>
     );

@@ -448,41 +448,49 @@ const KinderMarketingSection = () => {
     }, []);
 
     return (
-        <section className="relative w-full bg-white font-primary overflow-hidden">
+        <section className="relative w-full overflow-hidden lg:overflow-visible bg-white font-primary">
             {/* right warm glow */}
             <div className="pointer-events-none absolute right-[-120px] top-[210px] h-[620px] w-[430px] rounded-full bg-[radial-gradient(circle,_rgba(245,220,176,0.55)_0%,_rgba(245,220,176,0.22)_42%,_transparent_74%)] blur-[28px]" />
 
             <div className="mx-auto max-w-[1600px] px-4 pb-16 pt-16 sm:px-6 lg:px-10 xl:px-14">
-                {/* top heading */}
+                {/* heading */}
                 <div className="text-center">
-                    <h2 className="text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight text-black">
+                    <h2 className="text-[26px] font-bold leading-tight text-black sm:text-[32px] md:text-[36px] lg:text-[40px]">
                         Swing It with AI – 360° Preschool Brilliance Unlocked!
                     </h2>
-                    <p className="mt-4 text-[18px] sm:text-[20px] md:text-[21px] font-medium tracking-wide text-sbTextLight">
+                    <p className="mt-4 text-[18px] font-medium tracking-wide text-sbTextLight sm:text-[20px] md:text-[21px]">
                         Leap into the world of possibilities for early education.
                     </p>
                 </div>
 
-                <div className="relative mt-12 flex flex-col lg:flex-row items-start gap-10">
-                    {/* left navigation */}
-                    {/* left navigation - hidden on mobile, sticky on desktop */}
-                    <div className="hidden lg:sticky lg:top-[150px] z-20 lg:block lg:w-[300px] shrink-0 self-start">
-                        <div className="flex lg:flex-col overflow-x-auto lg:overflow-x-visible no-scrollbar pb-4 lg:pb-0 gap-6 lg:gap-8 border-b lg:border-b-0 lg:border-l border-[#d8d8d8]">
+                <div className="relative mt-12 flex flex-col items-start gap-10 lg:flex-row">
+                    {/* left side nav */}
+                    <div className="hidden shrink-0 self-start lg:sticky lg:top-[140px] lg:block lg:w-[300px]">
+                        <div className="flex gap-6 overflow-x-auto border-b border-[#d8d8d8] pb-4 no-scrollbar lg:flex-col lg:gap-8 lg:overflow-x-visible lg:border-b-0 lg:border-l lg:pb-0">
                             {content.map((item) => {
                                 const isActive = activeTab === item.id;
+
                                 return (
                                     <button
                                         key={item.id}
+                                        type="button"
                                         onClick={() => scrollToSection(item.id)}
-                                        className={`relative whitespace-nowrap lg:whitespace-normal block lg:pl-9 text-left text-[16px] sm:text-[18px] leading-none transition-colors duration-200 py-2 lg:py-0 ${isActive
-                                            ? "font-semibold text-[#38a447] border-b-2 lg:border-b-0 border-[#efbc1b] lg:border-none"
+                                        className={`relative block whitespace-nowrap py-2 text-left text-[16px] leading-none transition-all duration-200 sm:text-[18px] lg:py-0 lg:pl-9 lg:whitespace-normal ${isActive
+                                            ? "font-normal text-[#38a447]"
                                             : "font-normal text-[#505050]"
                                             }`}
                                     >
                                         {isActive && (
-                                            <span className="hidden lg:block absolute left-[-7px] top-1/2 -translate-y-1/2 h-[14px] w-[14px] rounded-full bg-[#efbc1b]" />
+                                            <span className="absolute left-[-7px] top-1/2 hidden h-[14px] w-[14px] -translate-y-1/2 rounded-full bg-[#efbc1b] lg:block" />
                                         )}
-                                        {item.tab}
+                                        <span
+                                            className={`${isActive
+                                                ? "border-b-2 border-[#efbc1b] lg:border-b-0"
+                                                : ""
+                                                }`}
+                                        >
+                                            {item.tab}
+                                        </span>
                                     </button>
                                 );
                             })}
@@ -492,11 +500,15 @@ const KinderMarketingSection = () => {
                     {/* right scroll sections */}
                     <div className="flex-1">
                         {content.map((item) => (
-                            <FeatureCard
+                            <div
                                 key={item.id}
-                                item={item}
-                                sectionRefs={sectionRefs}
-                            />
+                                id={item.id}
+                                ref={(el) => {
+                                    if (el) sectionRefs.current[item.id] = el;
+                                }}
+                            >
+                                <FeatureCard item={item} />
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -505,7 +517,7 @@ const KinderMarketingSection = () => {
     );
 };
 
-const FeatureCard = ({ item, sectionRefs }) => {
+const FeatureCard = ({ item }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     // Limit characters for truncated description
@@ -519,13 +531,7 @@ const FeatureCard = ({ item, sectionRefs }) => {
     const displayedPoints = isExpanded ? item.points : item.points.slice(0, 2);
 
     return (
-        <div
-            id={item.id}
-            ref={(el) => {
-                if (el) sectionRefs.current[item.id] = el;
-            }}
-            className="mb-[100px] scroll-mt-[150px]"
-        >
+        <div className="mb-[100px] scroll-mt-[150px]">
             {/* Title */}
             <h3 className="text-[22px] sm:text-[28px] md:text-[32px] font-bold leading-tight text-black mb-4">
                 {item.title}
@@ -575,11 +581,11 @@ const FeatureCard = ({ item, sectionRefs }) => {
                     <ArrowRightCircle size={21} strokeWidth={2.15} className="shrink-0" />
                 </button>
 
-                <div className="mt-8 rounded-2xl overflow-hidden shadow-sb">
+                <div className="mt-8 overflow-hidden w-full lg:max-w-[750px] bg-transparent text-left">
                     <img
                         src={item.image}
                         alt={item.tab}
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover object-left"
                     />
                 </div>
             </div>
