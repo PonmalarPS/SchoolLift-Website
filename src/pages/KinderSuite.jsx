@@ -401,54 +401,64 @@ const Badge = ({ title, x, y }) => {
 
 const KinderMarketingSection = () => {
     const sectionRefs = useRef({});
+    const rightScrollRef = useRef(null);
     const [activeTab, setActiveTab] = useState(content[0]?.id || "");
 
     const scrollToSection = (id) => {
+        const container = rightScrollRef.current;
+        const target = sectionRefs.current[id];
+
+        if (!container || !target) return;
+
         setActiveTab(id);
-        const el = sectionRefs.current[id];
-        if (el) {
-            el.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        }
+
+        const top = target.offsetTop - 16;
+
+        container.scrollTo({
+            top,
+            behavior: "smooth",
+        });
     };
 
     useEffect(() => {
+        const container = rightScrollRef.current;
         const sections = content
             .map((item) => sectionRefs.current[item.id])
             .filter(Boolean);
 
-        if (!sections.length) return;
+        if (!container || !sections.length) return;
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const visibleSections = entries
-                    .filter((entry) => entry.isIntersecting)
-                    .sort(
-                        (a, b) =>
-                            Math.abs(a.boundingClientRect.top) -
-                            Math.abs(b.boundingClientRect.top)
-                    );
+        const handleScroll = () => {
+            const containerTop = container.getBoundingClientRect().top;
 
-                if (visibleSections.length > 0) {
-                    setActiveTab(visibleSections[0].target.id);
+            let closestSection = null;
+            let closestDistance = Infinity;
+
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                const distance = Math.abs(rect.top - containerTop - 20);
+
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestSection = section;
                 }
-            },
-            {
-                root: null,
-                rootMargin: "-20% 0px -55% 0px",
-                threshold: [0.2, 0.4, 0.6],
+            });
+
+            if (closestSection?.id) {
+                setActiveTab(closestSection.id);
             }
-        );
+        };
 
-        sections.forEach((section) => observer.observe(section));
+        handleScroll();
+        container.addEventListener("scroll", handleScroll);
 
-        return () => observer.disconnect();
+        return () => {
+            container.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
-        <section className="relative w-full overflow-hidden lg:overflow-visible bg-white font-primary">
+        <section className="relative w-full bg-white font-primary overflow-visible">
             {/* right warm glow */}
             <div className="pointer-events-none absolute right-[-120px] top-[210px] h-[620px] w-[430px] rounded-full bg-[radial-gradient(circle,_rgba(245,220,176,0.55)_0%,_rgba(245,220,176,0.22)_42%,_transparent_74%)] blur-[28px]" />
 
@@ -465,8 +475,9 @@ const KinderMarketingSection = () => {
 
                 <div className="relative mt-12 flex flex-col items-start gap-10 lg:flex-row">
                     {/* left side nav */}
-                    <div className="hidden shrink-0 self-start lg:sticky lg:top-[140px] lg:block lg:w-[300px]">
-                        <div className="flex gap-6 overflow-x-auto border-b border-[#d8d8d8] pb-4 no-scrollbar lg:flex-col lg:gap-8 lg:overflow-x-visible lg:border-b-0 lg:border-l lg:pb-0">
+                    <div className="hidden shrink-0 self-start lg:sticky lg:top-[120px] lg:block lg:w-[300px] z-20">
+                        <div className="absolute left-[4px] top-[12px] bottom-[12px] w-px bg-[#d8d8d8]" />
+                        <div className="space-y-[30px] pt-[7px]">
                             {content.map((item) => {
                                 const isActive = activeTab === item.id;
 
@@ -475,41 +486,39 @@ const KinderMarketingSection = () => {
                                         key={item.id}
                                         type="button"
                                         onClick={() => scrollToSection(item.id)}
-                                        className={`relative block whitespace-nowrap py-2 text-left text-[16px] leading-none transition-all duration-200 sm:text-[18px] lg:py-0 lg:pl-9 lg:whitespace-normal ${isActive
+                                        className={`relative block pl-[36px] text-left text-[18px] leading-none tracking-[-0.02em] transition-all duration-200 ${isActive
                                             ? "font-normal text-[#38a447]"
                                             : "font-normal text-[#505050]"
                                             }`}
                                     >
                                         {isActive && (
-                                            <span className="absolute left-[-7px] top-1/2 hidden h-[14px] w-[14px] -translate-y-1/2 rounded-full bg-[#efbc1b] lg:block" />
+                                            <span className="absolute left-0 top-[3px] h-[14px] w-[14px] rounded-full bg-[#efbc1b]" />
                                         )}
-                                        <span
-                                            className={`${isActive
-                                                ? "border-b-2 border-[#efbc1b] lg:border-b-0"
-                                                : ""
-                                                }`}
-                                        >
-                                            {item.tab}
-                                        </span>
+                                        {item.tab}
                                     </button>
                                 );
                             })}
                         </div>
                     </div>
 
-                    {/* right scroll sections */}
-                    <div className="flex-1">
-                        {content.map((item) => (
-                            <div
-                                key={item.id}
-                                id={item.id}
-                                ref={(el) => {
-                                    if (el) sectionRefs.current[item.id] = el;
-                                }}
-                            >
-                                <FeatureCard item={item} />
-                            </div>
-                        ))}
+                    {/* right side scroll area */}
+                    <div
+                        ref={rightScrollRef}
+                        className="flex-1 lg:max-h-[78vh] lg:overflow-y-auto lg:pr-3"
+                    >
+                        <div className="space-y-8">
+                            {content.map((item) => (
+                                <div
+                                    key={item.id}
+                                    id={item.id}
+                                    ref={(el) => {
+                                        if (el) sectionRefs.current[item.id] = el;
+                                    }}
+                                >
+                                    <FeatureCard item={item} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -575,13 +584,13 @@ const FeatureCard = ({ item }) => {
                 </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col items-start justify-start text-left w-full">
                 <button className="inline-flex items-center gap-3 text-[16px] sm:text-[18px] font-medium text-black hover:text-[#38a447] transition-colors">
                     <span>Learn more</span>
                     <ArrowRightCircle size={21} strokeWidth={2.15} className="shrink-0" />
                 </button>
 
-                <div className="mt-8 overflow-hidden w-full lg:max-w-[750px] bg-transparent text-left">
+                <div className="mt-8 overflow-hidden w-full lg:max-w-[750px] bg-transparent text-left flex justify-start">
                     <img
                         src={item.image}
                         alt={item.tab}

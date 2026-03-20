@@ -636,7 +636,7 @@ const K12MarketingSection = () => {
     }, []);
 
     return (
-        <section className="relative w-full bg-white font-primary lg:overflow-visible overflow-hidden">
+        <section className="relative w-full bg-white font-primary overflow-visible">
             {/* right warm glow */}
             <div className="pointer-events-none absolute right-[-120px] top-[210px] h-[620px] w-[430px] rounded-full bg-[radial-gradient(circle,_rgba(245,220,176,0.55)_0%,_rgba(245,220,176,0.22)_42%,_transparent_74%)] blur-[28px]" />
 
@@ -653,7 +653,7 @@ const K12MarketingSection = () => {
 
                 <div className="relative mt-8 lg:mt-[35px] flex items-start gap-6 lg:gap-[20px]">
                     {/* left navigation - hidden on small screens */}
-                    <div className="hidden lg:block sticky top-[150px] z-20 w-[300px] shrink-0 self-start">
+                    <div className="hidden lg:block sticky top-[120px] z-20 w-[300px] shrink-0 self-start">
                         <div className="absolute left-[4px] top-[12px] bottom-[12px] w-px bg-[#d8d8d8]" />
                         <div className="space-y-[30px] pt-[7px]">
                             {content.map((item) => {
@@ -780,7 +780,7 @@ const FeatureCard = ({ item }) => {
                         className="w-full lg:w-[450px] h-auto lg:h-[400px] max-w-none object-left"
                     />
                 ) : (
-                    <div className="overflow-hidden w-full lg:max-w-[750px] bg-transparent text-left">
+                    <div className="overflow-hidden w-full lg:max-w-[750px] bg-transparent text-left flex justify-start">
                         <img
                             src={item.image}
                             alt={item.tab}
