@@ -1,34 +1,18 @@
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import CommonButton from "../component/CommonButton";
 import {
-    Users,
-    Wallet,
-    MessageCircle,
-    ClipboardList,
-    Bus,
     ArrowRightCircle,
     ArrowUp,
-    CheckCircle2,
-    CheckCircle,
     Check,
-    ArrowRight,
     ChevronLeft,
-    ChevronRight,
-    ChevronDown,
-    ChevronUp
+    ChevronRight
 } from "lucide-react";
 import FrequentlyAskedQuestions from "../component/FrequentlyAskedQuestions";
 import bannerImgBackground from "../assets/kinder-suite-icons/kinder-suite-banner-bg.webp";
 import bannerImg from "../assets/kinder-suite-icons/kinder-suite-banner.webp";
 import actionBanner from "../assets/kinder-suite-icons/action-banner.webp";
-import actionBannerMobile from "../assets/kinder-suite-icons/action-banner-mobile.webp";
 import automateLeadGeneration from "../assets/kinder-suite-icons/automateLeadGeneration.webp";
 import brandVisibility from "../assets/kinder-suite-icons/brandVisibility.webp";
-import coachProIcon from "../assets/kinder-suite-icons/coachPro.png";
-import k12SuiteIcon from "../assets/kinder-suite-icons/k12Suite.png";
-import kinderSuiteIcon from "../assets/kinder-suite-icons/kinderSuite.png";
-import tutorEdgeIcon from "../assets/kinder-suite-icons/tutorEdge.png";
-import linePath1 from "../assets/kinder-suite-icons/line-path-1.png";
 import marketingTools from "../assets/kinder-suite-icons/marketing-tools.webp";
 import parentConnect from "../assets/kinder-suite-icons/parentConnect.webp";
 import seamlessCommunication from "../assets/kinder-suite-icons/seamlessCommunication.webp";
@@ -48,8 +32,12 @@ import clientLogo7 from "../assets/kinder-suite-icons/client-logo-7.png";
 import clientLogo8 from "../assets/kinder-suite-icons/client-logo-8.png";
 import appStore from "../assets/parent-communication-icons/app-store.svg";
 import playStore from "../assets/parent-communication-icons/play-store.svg";
-import homeLearningBg from "../assets/home-icons/home-learning-bg.png";
 import nextGenVideo from "../assets/kinder-suite-icons/NextGenEdTech.mp4";
+import coachProIcon from "../assets/kinder-suite-icons/coachPro.png";
+import k12SuiteIcon from "../assets/kinder-suite-icons/k12Suite.png";
+import kinderSuiteIcon from "../assets/kinder-suite-icons/kinderSuite.png";
+import tutorEdgeIcon from "../assets/kinder-suite-icons/tutorEdge.png";
+import linePath1 from "../assets/kinder-suite-icons/line-path-1.png";
 
 const faqItems = [
     {

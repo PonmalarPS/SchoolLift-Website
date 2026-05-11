@@ -6,8 +6,7 @@ import {
     MessageCircle,
     ClipboardList,
     Bus,
-    Boxes,
-    ArrowUp
+    Boxes
 } from "lucide-react";
 import {
     Lightbulb,

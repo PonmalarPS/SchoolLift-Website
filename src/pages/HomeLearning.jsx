@@ -2,13 +2,6 @@ import React, { useRef, useState } from "react";
 import HeroSection from "../component/HeroSection";
 import CommonButton from "../component/CommonButton";
 import {
-    Users,
-    Wallet,
-    MessageCircle,
-    ClipboardList,
-    Bus,
-    Boxes,
-    ArrowUp,
     CheckCircle2,
     ChevronDown,
     ChevronUp
@@ -22,6 +15,7 @@ import girlIndianLogo from "../assets/home-learning-icons/indian-girl-getting-co
 import teacherLogo from "../assets/home-learning-icons/teacher-showing-geometry-pupil-classroom-800x600.jpg";
 import youngGirlLogo from "../assets/home-learning-icons/young-girl-using-laptop-indoors-800x600.jpg";
 import semiCircle from "../assets/home-icons/img_semicircle.png";
+import homeLearningBg from "../assets/home-icons/home-learning-bg.png";
 import learn1 from "../assets/home-learning-icons/learn-1.png";
 import learn2 from "../assets/home-learning-icons/learn-2.png";
 import learn3 from "../assets/home-learning-icons/learn-3.png";
@@ -35,12 +29,10 @@ import icon3 from "../assets/home-learning-icons/3.svg";
 import icon4 from "../assets/home-learning-icons/4.svg";
 import icon5 from "../assets/home-learning-icons/5.svg";
 import icon6 from "../assets/home-learning-icons/6.svg";
-
 import icon7 from "../assets/home-learning-icons/2.png";
 import icon8 from "../assets/home-learning-icons/3.png";
 import icon9 from "../assets/home-learning-icons/4.png";
 import icon10 from "../assets/home-learning-icons/5.png";
-import homeLearningBg from "../assets/home-icons/home-learning-bg.png";
 
 const HomeLearning = () => {
     return (
